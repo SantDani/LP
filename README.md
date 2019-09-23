@@ -1,1 +1,1 @@
-# LP
+# Laboratorio de programación
