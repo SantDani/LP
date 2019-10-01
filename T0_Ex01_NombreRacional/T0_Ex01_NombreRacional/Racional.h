@@ -1,5 +1,5 @@
 
-class NombreRacional
+class Racional
 {
 
 };
