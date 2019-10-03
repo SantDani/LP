@@ -1,0 +1,77 @@
+﻿  Hora.cpp
+  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(41,17): error C2039:  'setSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(43,75): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(43,102): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(47,31): error C2039:  'horaValida': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(99,89): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(99,123): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(102,113): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(102,151): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(104,31): error C2676:  '+' binario: 'Hora' no define este operador o una conversión a un tipo aceptable para el operador predefinido
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(105,100): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(105,131): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(107,34): error C2678:  '==' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'Hora' (o bien no existe una conversión aceptable)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(231,24): message :  puede ser 'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(226,24): message :  o       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(221,24): message :  o       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(216,24): message :  o       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\exception(289,24): message :  o       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\exception(285,24): message :  o       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\exception(281,24): message :  o       'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) noexcept'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(107,34): message :  al hacer coincidir la lista de argumentos '(Hora, Hora)'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(167,97): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(167,131): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(168,97): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(168,131): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(170,113): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(170,151): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(172,31): error C2676:  '+' binario: 'Hora' no define este operador o una conversión a un tipo aceptable para el operador predefinido
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(173,100): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(173,131): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(175,34): error C2678:  '==' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'Hora' (o bien no existe una conversión aceptable)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(231,24): message :  puede ser 'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(226,24): message :  o       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(221,24): message :  o       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(216,24): message :  o       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\exception(289,24): message :  o       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\exception(285,24): message :  o       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\exception(281,24): message :  o       'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) noexcept'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(175,34): message :  al hacer coincidir la lista de argumentos '(Hora, Hora)'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(227,93): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(227,128): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(228,93): error C2039:  'getMinuts': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(228,128): error C2039:  'getSegons': no es un miembro de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.h(3): message :  vea la declaración de 'Hora'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(232,46): error C2678:  '<' binario: no se encontró un operador que adopte un operando en la parte izquierda de tipo 'Hora' (o bien no existe una conversión aceptable)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(263,24): message :  puede ser 'bool std::operator <(const std::error_condition &,const std::error_condition &) noexcept'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\system_error(258,24): message :  o       'bool std::operator <(const std::error_code &,const std::error_code &) noexcept'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(232,46): message :  al hacer coincidir la lista de argumentos '(Hora, Hora)'
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(234,34): warning C4805:  '==': combinación no segura del tipo 'bool' y el tipo 'int' en la operación
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(257,27): warning C4244:  '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(265,27): warning C4244:  '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(273,27): warning C4244:  '+=': conversión de 'double' a 'float'; posible pérdida de datos
+  Generando código...
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\main.cpp(281,27): warning C4244:  '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(51): error C4716:  'Hora::segToHora': debe devolver un valor

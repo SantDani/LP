@@ -12,17 +12,21 @@ Poligon::Poligon()
 
 }
 
-//Poligon::Poligon(const Poligon& p)
-//{
-//	m_nCostats = p.m_nCostats;
-//	m_nVertexs = p.m_nVertexs;
-//
-//	m_vertexs = new Punt[p.m_nCostats];
-//
-//	for (int i = 0; i < m_nCostats; i++)
-//		m_vertexs[i] = p.m_vertexs[i];
-//
-//}
+Poligon::Poligon(const Poligon& p)
+{
+	m_nCostats = p.m_nCostats;
+	m_nVertexs = 0;
+	m_vertexs = NULL;
+	m_ultimVertex = NULL;
+	Node* aux = p.m_vertexs;
+	while (aux != NULL)
+	{
+		afegeixVertex(aux->getValor());
+		aux = aux->getNext();
+	}
+}
+
+
 
 
 Poligon::~Poligon()
@@ -63,7 +67,13 @@ bool Poligon::afegeixVertex(const Punt &v)
 		m_ultimVertex = aux ;
     }
     return correcte;
+
 }
+
+
+
+
+
 
 bool Poligon::getVertex(int nVertex, Punt &v) const
 {
@@ -88,36 +98,42 @@ float Poligon::calculaPerimetre() const
 	Node* aux = m_vertexs;
     for (int i = 0; i < m_nCostats - 1; i++)
     {
-		Node* seguient = aux->getNext;
-        dx = aux->getValor().getX() - seguient->getValor().getX();
-        dy = m_vertexs[i].getY() - m_vertexs[i+1].getY();
+		Node* seguent = aux->getNext();
+        dx = aux->getValor().getX() - seguent->getValor().getX();
+		dy = aux->getValor().getY() - seguent->getValor().getY();
         perimetre += sqrt(dx*dx + dy*dy);
     }
-	dx = m_vertexs[m_nCostats - 1].getX() - m_vertexs[0].getX();
-	dy = m_vertexs[m_nCostats - 1].getY() - m_vertexs[0].getY();
+	dx = aux->getValor().getX() - m_vertexs->getValor().getX();
+	dy = aux->getValor().getY() - m_vertexs->getValor().getY();
 	perimetre += sqrt(dx*dx + dy*dy);
 	
 	return perimetre;
 }
 
-Poligon& Poligon::operator=(const Poligon &p)
+Poligon& Poligon::operator=(const Poligon& p)
 {
-	if (this != &p) 
+	if (this != &p)
 	{
 		m_nCostats = p.m_nCostats;
-		m_nVertexs = p.m_nVertexs;
+		m_nVertexs = 0;
 
-		if (m_vertexs == NULL)
-			delete[] m_vertexs;
-
-		m_vertexs = new Punt[p.m_nCostats];
-		for (int i = 0; i < m_nCostats; i++)
-			m_vertexs[i] = p.m_vertexs[i];
+		while (m_vertexs != NULL)
+		{
+			Node* aux;
+			aux = m_vertexs;
+			m_vertexs = m_vertexs->getNext();
+			delete aux;
+		}
+		
+		Node* aux = p.m_vertexs;
+		while (aux != NULL)
+		{
+			afegeixVertex(aux->getValor());
+			aux = aux->getNext();
+		}
 
 	}
-	
+
 	return *this;
 }
-
-
 
