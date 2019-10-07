@@ -1,0 +1,39 @@
+﻿  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\Operacions.h(3,34): error C4430:  falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\Operacions.h(3,34): error C2143:  error de sintaxis: falta ',' delante de '&'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(47,3): error C2065:  'NombreRacional': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(47,18): error C2146:  error de sintaxis: falta ';' delante del identificador 'r1'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(47,18): error C3861:  'r1': no se encontró el identificador
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(48,3): error C2065:  'NombreRacional': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(48,18): error C2146:  error de sintaxis: falta ';' delante del identificador 'r2'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(48,18): error C2065:  'r2': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(49,3): error C2065:  'r2': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(50,3): error C2065:  'r2': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(51,3): error C2065:  'NombreRacional': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(51,18): error C2146:  error de sintaxis: falta ';' delante del identificador 'racionalEsperat'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(51,18): error C3861:  'racionalEsperat': no se encontró el identificador
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(54,40): error C2065:  'r1': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(54,68): error C2065:  'r1': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(55,40): error C2065:  'r2': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(55,68): error C2065:  'r2': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(60,49): error C2065:  'racionalEsperat': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(60,90): error C2065:  'racionalEsperat': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(62,3): error C2065:  'NombreRacional': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(62,18): error C2146:  error de sintaxis: falta ';' delante del identificador 'resultat'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(62,18): error C2065:  'resultat': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(63,23): error C2065:  'r1': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(63,27): error C2065:  'r2': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(63,44): error C2065:  'resultat': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(66,50): error C2065:  'resultat': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(66,84): error C2065:  'resultat': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(71,9): error C2065:  'resultat': identificador no declarado
+  Operacions.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\main.cpp(71,21): error C2065:  'racionalEsperat': identificador no declarado
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\Operacions.h(3,34): error C4430:  falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\Operacions.h(3,34): error C2143:  error de sintaxis: falta ',' delante de '&'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\Operacions.cpp(3,34): error C4430:  falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+  Racional.cpp
+  Conjunt.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\Operacions.cpp(3,34): error C2143:  error de sintaxis: falta ',' delante de '&'
+  Generando código...
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_Ex01_NombreRacional\T0_Ex01_NombreRacional\Conjunt.cpp(23,18): error C2065:  'NULL': identificador no declarado

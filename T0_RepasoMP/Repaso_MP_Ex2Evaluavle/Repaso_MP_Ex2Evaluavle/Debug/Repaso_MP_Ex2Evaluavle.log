@@ -1,0 +1,12 @@
+﻿  Hora.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(44,10): warning C4244:  'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(49,13): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(51,12): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(52,14): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(54,12): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(55,12): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(57,12): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(59,24): warning C4244:  'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(59,19): warning C4244:  'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Repaso_MP_Ex2Evaluavle\RepasMP - Exercici 2 (curs 19-20)\Hora.cpp(59,12): warning C4244:  'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  Repaso_MP_Ex2Evaluavle.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\Repaso_MP_Ex2Evaluavle\Debug\Repaso_MP_Ex2Evaluavle.exe
