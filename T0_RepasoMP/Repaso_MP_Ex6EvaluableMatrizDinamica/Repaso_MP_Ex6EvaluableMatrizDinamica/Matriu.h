@@ -8,7 +8,7 @@ public:
 	Matriu() : m_matriu(nullptr), m_nFiles(0), m_nColumnes(0) {}
 	//Matriu(int nFiles, int nColumnes) : m_matriu(nullptr), m_nFiles(0), m_nColumnes(0) {resize(nFiles, nColumnes);}
 	Matriu(int nFiles, int nCol);
-	Matriu(const Matriu& m) : m_matriu(nullptr), m_nFiles(0), m_nColumnes(0) { *this = m; }
+	Matriu(const Matriu& m);
 	~Matriu();
 
 	void liberarMemoria();
