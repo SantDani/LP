@@ -4,8 +4,6 @@ void LliuramentsEstudiant::afegeixTramesa(const string& fitxer, const string& da
 {
 	Tramesa tramesa(fitxer, data);
 	m_trameses.push_front(tramesa);
-
-	
 }
 
 bool LliuramentsEstudiant::consultaTramesa(const string& data, string& fitxer)
@@ -18,8 +16,6 @@ bool LliuramentsEstudiant::consultaTramesa(const string& data, string& fitxer)
 		if (it->getData() == data)
 		{
 			fitxer = it->getFitxer();// comprobar
-			tramesaTrobada = true;
-			//it = m_trameses.end();
 		}
 	}
 
