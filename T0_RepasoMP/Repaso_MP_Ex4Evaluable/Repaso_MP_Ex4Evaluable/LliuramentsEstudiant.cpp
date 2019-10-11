@@ -1,4 +1,5 @@
 #include "LliuramentsEstudiant.h"
+#include <iostream>
 
 void LliuramentsEstudiant::afegeixTramesa(const string& fitxer, const string& data)
 {
@@ -13,9 +14,13 @@ bool LliuramentsEstudiant::consultaTramesa(const string& data, string& fitxer)
 	std::forward_list<Tramesa>::iterator it;
 	for (it = m_trameses.begin(); it != m_trameses.end(); it++)
 	{
+		//cout << "fecha actual: " << it->getData()<< " Buscando fecha: " << data << endl;
 		if (it->getData() == data)
 		{
+			tramesaTrobada = true;
+			//cout << "-------------------------------------------------------encontrado" << endl; 
 			fitxer = it->getFitxer();// comprobar
+			break;
 		}
 	}
 
@@ -25,22 +30,25 @@ bool LliuramentsEstudiant::consultaTramesa(const string& data, string& fitxer)
 bool LliuramentsEstudiant::eliminaTramesa(const string& data)
 {
 	bool eliminarTramesa = false;
-	//std::forward_list<Tramesa>::const_iterator aux = m_trameses.before_begin();
-		
-	std::forward_list<Tramesa>::iterator it ;
-	 //string data = aux->getData();
-	 //string fixer = aux->getFitxer();
-	for (it = m_trameses.begin(); it != m_trameses.end(); it++)
-	{
+	std::forward_list<Tramesa>::iterator itAnterior = m_trameses.before_begin();
+	std::forward_list<Tramesa>::iterator itActual = m_trameses.begin();
 	
-		string myFecha = it->getData();
-		if (it->getData() == data)
+
+	while (!eliminarTramesa && (itActual != m_trameses.end()))
+	{
+		cout << itActual->getData() << " esperando " << data << endl;
+		if (itActual->getData() == data ) 
 		{
-			Tramesa tramesa(*it);
-			//m_trameses.remove(tramesa); // comprobar FIX
+			cout << itActual->getData() << " ENCONTRADO Y ELIMINADO ------- " << data << endl;
 			eliminarTramesa = true;
-			//it = m_trameses.end();
+			itActual = m_trameses.erase_after(itAnterior);
 		}
+		else 
+		{
+			itAnterior = itActual;
+			itActual++;
+		}
+
 	}
 	return eliminarTramesa;
 }

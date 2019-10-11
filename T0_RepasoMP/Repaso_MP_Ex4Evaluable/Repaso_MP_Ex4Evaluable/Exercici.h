@@ -12,9 +12,12 @@ public:
 	~Exercici();
 	Exercici& operator=(const Exercici& e);
 	void inicialitzaEstudiants(const string& fitxerEstudiants);
+	void addEstudiant(const string& niu, const string& fitxer, const string& data);
 	bool afegeixTramesa(const string& niu, const string& fitxer, const string& data);
 	bool consultaTramesa(const string& niu, const string& data, string& fitxer);
 	bool eliminaTramesa(const string& niu, const string& data);
+
+	
 private:
 	string m_descripcio;
 	string m_dataLimit;
