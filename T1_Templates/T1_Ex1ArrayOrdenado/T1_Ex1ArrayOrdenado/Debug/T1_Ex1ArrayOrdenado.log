@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex1ArrayOrdenado\T1_Ex1ArrayOrdenado\main.cpp(230,37): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex1ArrayOrdenado\T1_Ex1ArrayOrdenado\main.cpp(296,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex1ArrayOrdenado\T1_Ex1ArrayOrdenado\main.cpp(304,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+  T1_Ex1ArrayOrdenado.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex1ArrayOrdenado\Debug\T1_Ex1ArrayOrdenado.exe
