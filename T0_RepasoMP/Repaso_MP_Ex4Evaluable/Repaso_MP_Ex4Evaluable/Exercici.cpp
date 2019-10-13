@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <sstream>
+
 using namespace std;
 
 Exercici::Exercici(const Exercici& e)
@@ -44,35 +44,36 @@ Exercici& Exercici::operator=(const Exercici& e)
 
 void Exercici::inicialitzaEstudiants(const string& fitxerEstudiants)
 {
-	ifstream fichero(fitxerEstudiants);
+	ifstream fichero;
 	string textoLinea;
+
+	fichero.open(fitxerEstudiants);
 	
 	int cont = 0;
-
-	if (fichero.fail())
-	{
-		cout << "Error al abrir achivo" << fitxerEstudiants << endl;
-		exit(1);
-	}
 	
-	//Mientras no sea el final del fichero
-	while (!fichero.eof())
+	
+
+	if (fichero.is_open())
 	{
-		getline(fichero, textoLinea);
-		if (cont == 0)
+		while (!fichero.eof())//Mientras no sea el final del fichero
 		{
-			//creamos el array dinamico
-			std::istringstream numEstudiants(textoLinea);
-			numEstudiants >> m_nEstudiants;
-			m_lliuraments = new LliuramentsEstudiant[m_nEstudiants];
+			getline(fichero, textoLinea);
+			if (cont == 0)
+			{
+				//creamos el array dinamico
+				//std::string::size_type sz;
+				m_nEstudiants = std::stoi(textoLinea);
+				m_lliuraments = new LliuramentsEstudiant[m_nEstudiants];
+			}
+			else
+			{
+				m_lliuraments[cont - 1].setNiu(textoLinea);
+				//string niu =  m_lliuraments[cont - 1].getNiu();
+			}
+			cont++;
 		}
-		else
-		{
-			m_lliuraments[cont-1].setNiu(textoLinea);
-			//string niu =  m_lliuraments[cont - 1].getNiu();
-		}
-		cont++;
 	}
+	fichero.close();
 }
 
 void Exercici::addEstudiant(const string& niu, const string& fitxer, const string& data)
@@ -165,10 +166,9 @@ bool Exercici::eliminaTramesa(const string& niu, const string& data)
 		//cout << m_lliuraments[i].getNiu() <<  " esperado " << niu <<endl;
 		if ( myNiu == niu)
 		{
-			
-			cout << "----------------------------- Niu encontrado procedemos a eliminar tramesa" << endl;
+			//cout << "----------------------------- Niu encontrado procedemos a eliminar tramesa" << endl;
 			existeEstudiante = true;
-		 eliminar = m_lliuraments->eliminaTramesa(data);
+			eliminar = m_lliuraments[i].eliminaTramesa(data);
 			i = m_nEstudiants;
 		}
 		
@@ -178,8 +178,4 @@ bool Exercici::eliminaTramesa(const string& niu, const string& data)
 		return true;
 	else
 		return false;
-	
-	
-
-	
 }

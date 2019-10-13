@@ -19,7 +19,6 @@ public:
 	bool operator==(const Persona& persona);
 	Persona operator=(const Persona& persona);
 
-	Persona mitad(const Persona& persona, int div);
 private:
 	string m_nom;
 	int m_edat;

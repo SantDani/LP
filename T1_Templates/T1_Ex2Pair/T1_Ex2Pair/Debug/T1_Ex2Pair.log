@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex2Pair\T1_Ex2Pair\main.cpp(148,37): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex2Pair\T1_Ex2Pair\main.cpp(218,28): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+  T1_Ex2Pair.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex2Pair\Debug\T1_Ex2Pair.exe

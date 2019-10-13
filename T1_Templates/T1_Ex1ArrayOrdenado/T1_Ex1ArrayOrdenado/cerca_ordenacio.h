@@ -12,6 +12,7 @@ void moverMayor(T*& vector, int j, int& nElements);
 template<class T>
 void MayorMenorNombre(T* vector, int j);
 template <class T>
+
 void ordena(T vector[], int nElements)
 {
 	for (int i = 0; i < nElements; i++)

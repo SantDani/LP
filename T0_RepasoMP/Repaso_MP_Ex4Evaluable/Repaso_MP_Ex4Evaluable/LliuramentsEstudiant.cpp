@@ -1,6 +1,8 @@
 #include "LliuramentsEstudiant.h"
 #include <iostream>
 
+using namespace std;
+
 void LliuramentsEstudiant::afegeixTramesa(const string& fitxer, const string& data)
 {
 	Tramesa tramesa(fitxer, data);
@@ -36,10 +38,10 @@ bool LliuramentsEstudiant::eliminaTramesa(const string& data)
 
 	while (!eliminarTramesa && (itActual != m_trameses.end()))
 	{
-		cout << itActual->getData() << " esperando " << data << endl;
+		//cout << itActual->getData() << " esperando " << data << endl;
 		if (itActual->getData() == data ) 
 		{
-			cout << itActual->getData() << " ENCONTRADO Y ELIMINADO ------- " << data << endl;
+			//cout << itActual->getData() << " ENCONTRADO Y ELIMINADO ------- " << data << endl;
 			eliminarTramesa = true;
 			itActual = m_trameses.erase_after(itAnterior);
 		}
