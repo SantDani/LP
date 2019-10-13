@@ -1,0 +1,7 @@
+﻿  main.cpp
+  Poligon.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\RepasoMP_Ex1_PuntPoligon\RepasoMP_Ex1_PuntPoligon\Poligon.h(4,10): error C1083:  No se puede abrir el archivo incluir: 'Node.h': No such file or directory
+  Punt.cpp
+  Node.cpp
+  Generando código...
+C:\Users\SantiagoSRP\GIT\UAB\LP\RepasoMP_Ex1_PuntPoligon\RepasoMP_Ex1_PuntPoligon\Poligon.h(4,10): error C1083:  No se puede abrir el archivo incluir: 'Node.h': No such file or directory
