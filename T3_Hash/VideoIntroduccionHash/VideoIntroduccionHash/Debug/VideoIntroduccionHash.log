@@ -1,0 +1,7 @@
+﻿  Hash.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T3_Hash\VideoIntroduccionHash\VideoIntroduccionHash\Hash.cpp(25,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\T3_Hash\VideoIntroduccionHash\VideoIntroduccionHash\Hash.cpp(27,26): warning C4244: '+=': conversión de 'double' a 'unsigned long'; posible pérdida de datos
+  main.cpp
+  Generando código...
+C:\Users\SantiagoSRP\GIT\UAB\LP\T3_Hash\VideoIntroduccionHash\VideoIntroduccionHash\Hash.cpp(89,20): warning C4018: '<': no coinciden signed/unsigned
+  VideoIntroduccionHash.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\T3_Hash\VideoIntroduccionHash\Debug\VideoIntroduccionHash.exe
