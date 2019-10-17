@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/T3_Hash/S8_HashDiccionario/.vs/S8_HashDiccionario/v16/Browse.VC.db
+/T3_Hash/S8_HashDiccionario/.vs/S8_HashDiccionario/v16/Browse.VC.opendb
+/T3_Hash/S8_HashDiccionario/.vs/S8_HashDiccionario/v16/ipch/AutoPCH/ad19b4d8555a537c/HASH.ipch
