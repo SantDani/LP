@@ -41,8 +41,6 @@ void Hash::insertIntern(const string& clau, const string& descripcio)
 	}
 	else //Sino esta buida es COLLISIO
 	{
-		//
-		
 		bool encontrarVacio = false;
 		int i= 0;
 
@@ -73,7 +71,7 @@ void Hash::insertIntern(const string& clau, const string& descripcio)
 			m_numOcupats++;
 			encontrarVacio = true;
 		}else
-			throw "COL.LISIO, metodo de reasignacion";
+			throw "no se ha encontrado un sitio vacio";
 		
 	}
 		
@@ -110,10 +108,34 @@ bool Hash::esborra(const string& clau)
 	return trobat;
 }
 
+int Hash::cerca(const string& clau) const
+{
+	bool trobat = false;
+	int indixe;
+	int vegades = 0;
+	while (!trobat &&  vegades <= m_maxElements)
+	{
+		//calcular indice
+
+	}
+	return 0;
+}
+
 void Hash::insert(const string& clau, const string& descripcio)
 {
+	//erquem posicio amb colisions
 	int index=codi(clau);
-	
+	int vegades = 1;
+
+	//while mientras el estado sea diferente de libre
+		//encontrado = true
+		//buscamos un nuevo indice
+	//si encontramos pues modificamos el valor
+	// si no encontramos pues add nuevo valor
+	while (true)
+	{
+
+	}
 	if (m_diccionari[index].first == clau)
 	{
 		//Element trobat
@@ -152,5 +174,20 @@ ostream& operator<<(ostream &out, const Hash& h)
 		}		
 	}
 	return out;
+}
+
+bool Hash::find(const string& clau, string& definicio) const
+{
+	int index = cerca(clau);
+
+	//
+	if (m_estado != LLiure && m_diccionari[index].first == clau)
+	{
+		definicio = m_diccionari[index].second;
+		trobat = true;
+	}
+	else
+		definicio = "elemento no encontrado";
+	return trobat;
 }
 
