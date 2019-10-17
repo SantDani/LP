@@ -9,7 +9,7 @@ using namespace std;
 class Hash
 {
 public:
-	Hash(int numIni=10, const string& descripcioDefecte="Definicio no existent") ;
+	Hash(int numIni=10, const string& descripcioDefecte="Definicio no existent", int estado = LLIURE) ;
 	~Hash();
 	string& operator[](const string& clau);
 	void insert(const string& clau, const string& descripció);	
@@ -26,4 +26,10 @@ private:
 	int m_numOcupats;
 	int m_maxElements;
 	string m_descripcioDefecte;		
+
+	vector<int> m_estado;
+
+	static const int LLIURE		= 0;
+	static const int OCUPAT		= 2;
+	static const int ESBORRAT	= 3;
 };

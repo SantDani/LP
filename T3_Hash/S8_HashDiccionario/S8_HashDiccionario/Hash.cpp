@@ -1,13 +1,16 @@
 #include "Hash.h"
 #include <math.h>
 
-Hash::Hash(int numIni, const string& descripcioDefecte)
+Hash::Hash(int numIni, const string& descripcioDefecte, int estado)
 {
-	m_maxElements = numIni;
+	m_maxElements = numIni;//Por defecto
 	m_descripcioDefecte=descripcioDefecte;
 	
 	m_diccionari.resize(m_maxElements,pair<string,string>("",""));
+	m_estado.resize(m_maxElements, LLIURE);//Inicializamos todos los estados en libre
+
 	m_numOcupats = 0;
+	
 }
 
 Hash::~Hash()
@@ -37,7 +40,43 @@ void Hash::insertIntern(const string& clau, const string& descripcio)
 		m_numOcupats++;
 	}
 	else //Sino esta buida es COLLISIO
-		throw "COL.LISIO";
+	{
+		//
+		
+		bool encontrarVacio = false;
+		int i= 0;
+
+		while (!encontrarVacio && i < m_maxElements)
+		{
+			//hay que reasignar indice
+			//Hay que ver el estado de esta posicio. De esta manera hay que encontrar el primera posicion con el estado vacio.
+			if (m_estado[index] == OCUPAT) 
+			{
+				//Aplicamos el sondeo quadratico
+				/* hi(x) = (h(x) + i^2) % M*/
+				index = ( index + (i * i) )% m_maxElements;
+			}
+			else if (m_estado[index] == LLIURE)
+			{
+				encontrarVacio = true;
+			}
+			i++;
+		}
+
+		//Hemos encontrado una posicion libre con el sondeo
+		//Inserim element a posicio buida
+		if(encontrarVacio)
+		{
+			m_diccionari[index].first = clau;
+			m_diccionari[index].second = descripcio;
+			m_estado[index] = OCUPAT;
+			m_numOcupats++;
+			encontrarVacio = true;
+		}else
+			throw "COL.LISIO, metodo de reasignacion";
+		
+	}
+		
 }
 
 bool Hash::find(const string& clau, string& definicio) const

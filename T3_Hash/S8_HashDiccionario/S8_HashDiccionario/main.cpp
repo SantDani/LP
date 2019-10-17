@@ -7,8 +7,8 @@ int main()
 	try 
 	{
 		//CODI INICIAL
-		Hash h(20);
-		//Hash h;
+		//Hash h(20);
+		Hash h;
 		const int MAXELEMENTS = 6;
 		pair<string, string> vEntrada[MAXELEMENTS] = { pair<string,string>("Hola", "Es una salutacio."),
 		pair<string,string>("Adeu","Es un comiat."),
