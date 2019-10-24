@@ -1,0 +1,32 @@
+﻿  Matriu.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(44,21): warning C4244: 'argumento': conversión de 'int' a 'const _Ty'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(44,21): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(44,21): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(44,21): warning C4244:             _Ty=float
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(44,21): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45,21): warning C4244: 'argumento': conversión de 'int' a 'const _Ty'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45,21): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45,21): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45,21): warning C4244:             _Ty=float
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45,21): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(46,25): warning C4244: 'argumento': conversión de 'const int' a 'const _Ty'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(46,25): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(46,25): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(46,25): warning C4244:             _Ty=float
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(46,25): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(31,18): warning C4101: 'valor': variable local sin referencia
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(65,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(79,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(148,14): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(149,16): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,19): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(167,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(215,19): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(217,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(223,25): warning C4244: '=': conversión de '_Ty' a 'int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(223,25): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(223,25): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(223,25): warning C4244:             _Ty=float
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(223,25): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(311,20): warning C4018: '<': no coinciden signed/unsigned
+  mainProyecto.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\Debug\mainProyecto.exe
