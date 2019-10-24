@@ -16,6 +16,7 @@ public:
 	bool find(const string& clau, string& definicio) const;
 	bool esborra(const string& clau);
 	friend ostream& operator<<(ostream &out, const Hash& h);
+	int	cerca(const string& clau);
 	
 private:
 	int codi(string s) const;
