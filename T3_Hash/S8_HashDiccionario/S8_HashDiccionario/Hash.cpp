@@ -108,7 +108,7 @@ bool Hash::esborra(const string& clau)
 	return trobat;
 }
 
-int Hash::cerca(const string& clau) const
+int Hash::cerca(const string& clau) 
 {
 	bool trobat = false;
 	int indixe;
@@ -178,10 +178,11 @@ ostream& operator<<(ostream &out, const Hash& h)
 
 bool Hash::find(const string& clau, string& definicio) const
 {
+	bool trobat;
 	int index = cerca(clau);
 
 	//
-	if (m_estado != LLiure && m_diccionari[index].first == clau)
+	if (m_estado[index] != LLIURE && m_diccionari[index].first == clau)
 	{
 		definicio = m_diccionari[index].second;
 		trobat = true;
