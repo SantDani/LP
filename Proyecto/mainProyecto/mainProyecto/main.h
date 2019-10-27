@@ -7,3 +7,5 @@ void mostrarVector(std::vector<float>& vecNum);
 void testVector();
 
 void testConstructorAsignacion();
+
+void testAddElementVector();

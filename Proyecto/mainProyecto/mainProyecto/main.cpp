@@ -2,6 +2,7 @@
 #include <math.h>
 #include <iostream>
 #include "main.h"
+#include <vector>
 using namespace std;
 
 int main()
@@ -11,13 +12,49 @@ int main()
 	
 	//testConstructorAsignacion();
 	string fichero = "Xarxa1.txt";
+
 	Matriu m(fichero);
-	vector<float> vecAux(3, 1);
-	vector<float> res= m * vecAux;
+	 
+	cout << m;
+
+	m.setValor(7, 7, 6);
+	cout << "\n\n luego de add en la pos 7 7 valor 6" << endl;
+	cout << m;
+	//testAddElementVector();
+
+	
+	
 	
 
-
 	return 0;
+}
+
+void testAddElementVector()
+{
+	// initialising the vector 
+	vector<int> vec = { 10, 20, 30, 40 };
+	int numero = 25;
+	vector<int>::iterator it = vec.begin();
+	int cont = 0;
+
+	bool trobat = false;
+	while (it != vec.end() && !trobat)
+	{
+
+		if (numero < (*it))
+		{
+			trobat = true;
+		}
+		if (!trobat)
+		{
+			cont++;
+			it++;
+		}
+
+	}
+	vec.insert(vec.begin() + cont, numero);
+	for (auto it = vec.begin(); it != vec.end(); ++it)
+		cout << *it << "\t";
 }
 
 void testConstructorAsignacion()
@@ -31,7 +68,6 @@ void testConstructorAsignacion()
 	cout << m2;
 	m = m2;
 	cout << " m = m2 " << endl;
-
 
 	cout << m;
 }
