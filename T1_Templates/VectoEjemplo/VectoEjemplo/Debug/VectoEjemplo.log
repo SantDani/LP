@@ -1,0 +1,230 @@
+﻿  main.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(560,1): error C2825: '_Alloc': debe ser una clase o un espacio de nombres cuando vaya seguido de '::'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(777): message : vea la referencia a la creación de instancias de clase plantilla "std::_Normal_allocator_traits<_Alloc>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(777): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(777): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(777): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(777): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message : vea la referencia a la creación de instancias de clase plantilla "std::allocator_traits<_Alloc>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message : vea la referencia a la creación de instancias de alias plantilla "std::_Rebind_alloc_t<int,std::string>" que se está compilando
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\VectoEjemplo\VectoEjemplo\Map.h(36): message : vea la referencia a la creación de instancias de clase plantilla "std::vector<TClau,TValor>" que se está compilando
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\VectoEjemplo\VectoEjemplo\Map.h(36): message :         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\VectoEjemplo\VectoEjemplo\Map.h(36): message :         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\VectoEjemplo\VectoEjemplo\Map.h(36): message :             TClau=std::string,
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\VectoEjemplo\VectoEjemplo\Map.h(36): message :             TValor=int
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\VectoEjemplo\VectoEjemplo\Map.h(36): message :         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\VectoEjemplo\VectoEjemplo\main.cpp(10): message : vea la referencia a la creación de instancias de clase plantilla "Map<std::string,int>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(560,45): error C2510: '_Alloc': el operando izquierdo de '::' debe ser class/struct/union
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(560,1): error C2061: error de sintaxis: identificador 'value_type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(343,1): error C2825: '_Ty': debe ser una clase o un espacio de nombres cuando vaya seguido de '::'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message : vea la referencia a la creación de instancias de clase plantilla "std::_Get_pointer_type<_Alloc,void>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(343,32): error C2510: '_Ty': el operando izquierdo de '::' debe ser class/struct/union
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(343,1): error C2061: error de sintaxis: identificador 'value_type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562,68): error C2039: 'type': no es un miembro de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562,68): error C2039:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562,68): error C2039:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562,68): error C2039:             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562,68): error C2039:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message : vea la declaración de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562,1): error C2061: error de sintaxis: identificador 'type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(357,53): error C2039: 'type': no es un miembro de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(357,53): error C2039:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(357,53): error C2039:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(357,53): error C2039:             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(357,53): error C2039:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message : vea la declaración de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(563): message : vea la referencia a la creación de instancias de clase plantilla "std::_Get_const_pointer_type<_Alloc,void>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(563): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(563): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(563): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(563): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(357,1): error C2061: error de sintaxis: identificador 'type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(358,1): error C2825: '_Ty': debe ser una clase o un espacio de nombres cuando vaya seguido de '::'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(358,34): error C2510: '_Ty': el operando izquierdo de '::' debe ser class/struct/union
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(358,1): error C2061: error de sintaxis: identificador 'value_type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(359,44): error C2065: '_Ptrty': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(359,29): error C2923: 'std::pointer_traits': '_Ptrty' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(359,1): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(359,75): error C2146: error de sintaxis: falta '>' delante del identificador '_Valty'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(373,53): error C2039: 'type': no es un miembro de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(373,53): error C2039:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(373,53): error C2039:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(373,53): error C2039:             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(373,53): error C2039:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message : vea la declaración de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(564): message : vea la referencia a la creación de instancias de clase plantilla "std::_Get_void_pointer_type<_Alloc,void>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(564): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(564): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(564): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(564): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(373,1): error C2061: error de sintaxis: identificador 'type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(374,44): error C2065: '_Ptrty': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(374,29): error C2923: 'std::pointer_traits': '_Ptrty' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(385,53): error C2039: 'type': no es un miembro de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(385,53): error C2039:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(385,53): error C2039:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(385,53): error C2039:             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(385,53): error C2039:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message : vea la declaración de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(565): message : vea la referencia a la creación de instancias de clase plantilla "std::_Get_const_void_pointer_type<_Alloc,void>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(565): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(565): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(565): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(565): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(385,1): error C2061: error de sintaxis: identificador 'type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(386,44): error C2065: '_Ptrty': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(386,29): error C2923: 'std::pointer_traits': '_Ptrty' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(397,53): error C2039: 'type': no es un miembro de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(397,53): error C2039:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(397,53): error C2039:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(397,53): error C2039:             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(397,53): error C2039:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message : vea la declaración de 'std::_Get_pointer_type<_Alloc,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(562): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(409): message : vea la referencia a la creación de instancias de clase plantilla "std::_Get_difference_type<_Ty,void>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(409): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(409): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(409): message :             _Ty=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(409): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(567): message : vea la referencia a la creación de instancias de clase plantilla "std::_Get_size_type<_Alloc,void>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(567): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(567): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(567): message :             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(567): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(397,1): error C2061: error de sintaxis: identificador 'type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(398,44): error C2065: '_Ptrty': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(398,29): error C2923: 'std::pointer_traits': '_Ptrty' no es un argumento de tipo de plantilla válido para el parámetro '_Ty'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(398,53): error C2955: 'std::pointer_traits': el uso de clase plantilla requiere una lista de argumentos de plantilla
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(273): message : vea la declaración de 'std::pointer_traits'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(581,1): error C3646: 'allocate': especificador de invalidación desconocido
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(581,68): error C2065: '_Al': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(581,1): error C2275: '_Alloc': uso no válido de este tipo como expresión
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(581,1): error C2226: error de sintaxis: tipo 'std::_Normal_allocator_traits<_Alloc>::size_type' inesperado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(581,1): error C2226:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(581,1): error C2226:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(581,1): error C2226:             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(581,1): error C2226:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(581,1): error C2334: símbolos (token) inesperados delante de '{'; se pasará por alto el cuerpo de función aparente
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(586,1): error C3646: 'allocate': especificador de invalidación desconocido
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(587,17): error C2065: '_Al': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(587,1): error C2275: '_Alloc': uso no válido de este tipo como expresión
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(587,1): error C2226: error de sintaxis: tipo 'std::_Normal_allocator_traits<_Alloc>::size_type' inesperado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(587,1): error C2226:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(587,1): error C2226:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(587,1): error C2226:             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(587,1): error C2226:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(587,1): error C2334: símbolos (token) inesperados delante de '{'; se pasará por alto el cuerpo de función aparente
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(612,1): error C2061: error de sintaxis: identificador 'pointer'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464,4): error C2027: uso del tipo 'std::_Replace_first_parameter<_Other,_Ty>' sin definir
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464,4): error C2027:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464,4): error C2027:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464,4): error C2027:             _Other=std::string,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464,4): error C2027:             _Ty=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464,4): error C2027:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464): message : vea la declaración de 'std::_Replace_first_parameter<_Other,_Ty>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464): message :             _Other=std::string,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464): message :             _Ty=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message : vea la referencia a la creación de instancias de clase plantilla "std::_Get_rebind_type<_Alloc,_Ty,void>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message :             _Alloc=int,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message :             _Ty=std::string
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(795): message : vea la referencia a la creación de instancias de alias plantilla "std::_Normal_allocator_traits<_Alloc>::rebind_alloc<_Ty>" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(795): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(795): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(795): message :             _Alloc=int,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(795): message :             _Ty=std::string
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(795): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(464,1): error C2061: error de sintaxis: identificador 'type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(576,4): error C2794: 'type': no es miembro de ninguna clase base directa ni indirecta de 'std::_Get_rebind_type<_Alloc,_Ty,void>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(576,4): error C2794:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(576,4): error C2794:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(576,4): error C2794:             _Alloc=int,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(576,4): error C2794:             _Ty=std::string
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(576,4): error C2794:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359,1): error C2938: 'std::_Normal_allocator_traits<_Alloc>::rebind_alloc': no se pudo especializar la plantilla de alias
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359,1): error C2938:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359,1): error C2938:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359,1): error C2938:             _Alloc=int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359,1): error C2938:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(359,1): error C2938: 'std::_Rebind_alloc_t': no se pudo especializar la plantilla de alias
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(363,1): error C2825: '_Alloc': debe ser una clase o un espacio de nombres cuando vaya seguido de '::'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(363,84): error C2510: '_Alloc': el operando izquierdo de '::' debe ser class/struct/union
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(363,1): error C2146: error de sintaxis: falta '>' delante del identificador 'value_type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(363,1): error C2062: tipo 'unknown-type' inesperado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(364,1): error C2238: símbolos (token) inesperados delante de ';'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(368,52): error C2955: 'std::allocator_traits': el uso de clase plantilla requiere una lista de argumentos de plantilla
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(776): message : vea la declaración de 'std::allocator_traits'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(368,52): error C2039: 'pointer': no es un miembro de 'std::allocator_traits<_Alloc>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(368,1): error C2061: error de sintaxis: identificador 'pointer'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(369,52): error C2955: 'std::allocator_traits': el uso de clase plantilla requiere una lista de argumentos de plantilla
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(776): message : vea la declaración de 'std::allocator_traits'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(369,52): error C2039: 'const_pointer': no es un miembro de 'std::allocator_traits<_Alloc>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(369,1): error C2061: error de sintaxis: identificador 'const_pointer'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(372,52): error C2955: 'std::allocator_traits': el uso de clase plantilla requiere una lista de argumentos de plantilla
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(776): message : vea la declaración de 'std::allocator_traits'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(372,52): error C2039: 'size_type': no es un miembro de 'std::allocator_traits<_Alloc>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(372,1): error C2061: error de sintaxis: identificador 'size_type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(373,52): error C2955: 'std::allocator_traits': el uso de clase plantilla requiere una lista de argumentos de plantilla
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(776): message : vea la declaración de 'std::allocator_traits'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(373,52): error C2039: 'difference_type': no es un miembro de 'std::allocator_traits<_Alloc>'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(373,1): error C2061: error de sintaxis: identificador 'difference_type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(377,30): error C2065: 'size_type': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(377,3): error C2065: 'difference_type': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(377,3): error C2065: 'pointer': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(377,3): error C2065: 'const_pointer': identificador no declarado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(377,9): error C2923: 'std::_Vec_iter_types': 'size_type' no es un argumento de tipo de plantilla válido para el parámetro '_Size_type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(377,9): error C2923: 'std::_Vec_iter_types': 'difference_type' no es un argumento de tipo de plantilla válido para el parámetro '_Difference_type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(377,9): error C2923: 'std::_Vec_iter_types': 'pointer' no es un argumento de tipo de plantilla válido para el parámetro '_Pointer'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(377,9): error C2923: 'std::_Vec_iter_types': 'const_pointer' no es un argumento de tipo de plantilla válido para el parámetro '_Const_pointer'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(377,1): error C2993: 'unknown-type': tipo no válido para el parámetro de plantilla '_Test' sin tipo definido
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(380,53): error C3203: '_Vector_val': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Myvec'; se esperaba un tipo real
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(381,59): error C3203: '_Vector_val': clase plantilla sin especializar no se puede utilizar como argumento de plantilla para el parámetro de plantilla '_Myvec'; se esperaba un tipo real
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(397,1): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(397,71): error C2146: error de sintaxis: falta ')' delante del identificador '_Count'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(397,1): error C3646: '_Count': especificador de invalidación desconocido
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(397,1): error C2988: declaración o definición de plantilla irreconocible
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(397,1): error C2059: error de sintaxis: ','
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(397,1): error C2059: error de sintaxis: ')'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(397,1): error C2334: símbolos (token) inesperados delante de '{'; se pasará por alto el cuerpo de función aparente
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(412,1): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(412,56): error C2146: error de sintaxis: falta ')' delante del identificador '_Count'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(412,1): error C3646: '_Count': especificador de invalidación desconocido
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(412,76): error C2988: declaración o definición de plantilla irreconocible
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(412,76): error C2143: error de sintaxis: falta ';' delante de '&'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(412,1): error C2988: declaración o definición de plantilla irreconocible
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(412,1): error C2059: error de sintaxis: '&'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(412,1): error C2059: error de sintaxis: ')'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(412,1): error C2334: símbolos (token) inesperados delante de ':'; se pasará por alto el cuerpo de función aparente
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\VectoEjemplo\VectoEjemplo\main.cpp(8): fatal error C1075: "{": no se encontró ningún token coincidente

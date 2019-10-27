@@ -1,0 +1,39 @@
+﻿  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.h(6,26): error C2664: 'SmartPointer<int>::SmartPointer(const SmartPointer<int> &)': el argumento 1 no puede convertirse de 'int *' a 'const SmartPointer<int> &'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.h(6,26): message : Razón: no se puede realizar la conversión de 'int *' a 'const SmartPointer<int>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.h(6,26): message : Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\SmartPointer.h(10,2): message : vea la declaración de 'SmartPointer<int>::SmartPointer'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(23,5): error C2100: direccionamiento indirecto no válido
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(23,5): error C2039: 'getNom': no es un miembro de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(31,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(40,5): error C2100: direccionamiento indirecto no válido
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(40,5): error C2039: 'getNom': no es un miembro de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(48,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(55,5): error C2100: direccionamiento indirecto no válido
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(55,5): error C2039: 'getNom': no es un miembro de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(55,5): error C2039: 'isNull': no es un miembro de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(63,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(71,5): error C2100: direccionamiento indirecto no válido
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(71,5): error C2039: 'getNom': no es un miembro de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(71,5): error C2039: 'isNull': no es un miembro de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(79,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(86,5): error C2100: direccionamiento indirecto no válido
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(86,5): error C2039: 'getNom': no es un miembro de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(86,5): error C2039: 'isNull': no es un miembro de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(94,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(103,5): error C2819: el tipo 'SmartPointer<Persona>' no tiene un miembro sobrecargado 'operator ->'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(103,5): message : ¿deseaba utilizar '.' en su lugar?
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(103,5): error C2039: 'getNom': no es un miembro de 'SmartPointer<Persona>'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(20): message : vea la declaración de 'SmartPointer<Persona>'
+  Persona.cpp
+  Generando código...
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex5EvaluableSmartPointer\T1_Ex5EvaluableSmartPointer\main.cpp(111,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos

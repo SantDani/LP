@@ -1,7 +1,9 @@
 #include<iostream>
-
+#include <sstream>
 #include<fstream>//libreria de ficheros
 #include<string>// para que funcione getLine()
+
+
 
 using namespace std;
 
@@ -12,14 +14,16 @@ string addTextByConsole();
 void lecturaME(string urlFichero);
 void lectura();
 
-string const URL_FICHERO = "ficheros/FicheroPrueba.txt";
+string const URL_FICHERO = "ficheros/estudiants.txt";
+string *arrayAlumnos;
+
 int main()
 {
 	//crearSubtituirFichero();
 	
-	addText(URL_FICHERO);
-	//lecturaME(URL_FICHERO);
-	lectura();
+	//addText(URL_FICHERO);
+	lecturaME(URL_FICHERO);
+	//lectura();
 	system("pause");
 	return 0;
 }
@@ -81,8 +85,11 @@ string addTextByConsole()
 
 void lecturaME(string urlLetura)
 {
+	//int *arrayEstudiant;
 	ifstream archivo(URL_FICHERO);
-	char contendioArchivo[128];
+	string txtLinea;
+	int cantAlum;
+	int cont = 0;
 	//Abrir el fichero en modo lectura
 	//archivo.open(URL_FICHERO, ios::in);
 
@@ -94,8 +101,22 @@ void lecturaME(string urlLetura)
 	//Mientras no sea el final del archivo
 	while (!archivo.eof())
 	{
-		archivo.getline(contendioArchivo, 128);
-		cout << contendioArchivo << endl;
+		getline(archivo, txtLinea);
+		//cout << txtLinea << endl;
+		if (cont == 0) 
+		{
+			std::istringstream iss(txtLinea);
+			iss >> cantAlum;
+			arrayAlumnos = new string[cantAlum];
+
+			
+		}
+		else
+		{
+			arrayAlumnos[cont-1] = txtLinea;
+			cout << "Alumno add en pos [" << cont << "]: " <<arrayAlumnos[cont-1] << endl;
+		}
+		cont++;
 	}
 }
 
@@ -103,6 +124,7 @@ void lectura()
 {
 	ifstream archivo;
 	string texto;
+	
 	//abrir archivo en modo lectura
 	archivo.open(URL_FICHERO, ios::in);
 

@@ -1,4 +1,4 @@
 ﻿  ListaEnlazada.cpp
-C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Nodos_ListasEnlazadas\Nodos_ListasEnlazadas\ListaEnlazada.cpp(41,10): warning C4129:  'M': secuencia de escape de carácter no reconocida
-C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Nodos_ListasEnlazadas\Nodos_ListasEnlazadas\ListaEnlazada.cpp(56,8): warning C4101:  'aux2': variable local sin referencia
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Nodos_ListasEnlazadas\Nodos_ListasEnlazadas\ListaEnlazada.cpp(37,10): warning C4129: 'M': secuencia de escape de carácter no reconocida
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Nodos_ListasEnlazadas\Nodos_ListasEnlazadas\ListaEnlazada.cpp(52,8): warning C4101: 'aux2': variable local sin referencia
   Nodos_ListasEnlazadas.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Nodos_ListasEnlazadas\Debug\Nodos_ListasEnlazadas.exe

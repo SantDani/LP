@@ -3,14 +3,10 @@
 #include<iostream>
 #include<conio.h>
 #include <cstdlib> //random
+#include"Node.h"
 using namespace std;
 
 
-struct Nodo
-{
-	int dato;
-	Nodo* siguienteNodo;
-};
 
 //FUNCIONES: prototipos
 void addNodo(Nodo *&nodo, int num);
@@ -50,7 +46,7 @@ void addNodo(Nodo*& ultimoNodo_lista, int num)
 {
 	Nodo *nuevo_nodo = new Nodo();
 
-	nuevo_nodo->dato = num;
+	nuevo_nodo->setValor(num);
 
 	Nodo *aux1  = ultimoNodo_lista;
 	Nodo *aux2;
@@ -59,8 +55,7 @@ void addNodo(Nodo*& ultimoNodo_lista, int num)
 		aux1 = nuevo_nodo;
 	else 
 	{
-		nuevo_nodo->siguienteNodo = ultimoNodo_lista;
-		
+		nuevo_nodo->setNext(ultimoNodo_lista);
 	}
 	ultimoNodo_lista = nuevo_nodo;
 }
@@ -69,15 +64,15 @@ void addNodoOrdenado(Nodo*& ultimoNodo_lista, int num)
 {
 	Nodo* nuevo_nodo = new Nodo();
 
-	nuevo_nodo->dato = num;
+	nuevo_nodo->setValor(num);
 
 	Nodo* aux1 = ultimoNodo_lista;
 	Nodo* aux2 = NULL;
 
-	while ((aux1 != NULL) && (aux1->dato < num))
+	while ((aux1 != NULL) && (aux1->getValor() < num))
 	{
 		aux2 = aux1;
-		aux1 = aux1->siguienteNodo; 
+		aux1 = aux1->getNext(); 
 
 	}
 
@@ -88,10 +83,10 @@ void addNodoOrdenado(Nodo*& ultimoNodo_lista, int num)
 		
 	}
 	else {//ha entrado en el while. Por lo tanto se han ordenado los nodos
-		aux2->siguienteNodo = nuevo_nodo;
+		aux2->setNext(nuevo_nodo);
 	}
 
-	nuevo_nodo->siguienteNodo = aux1;
+	nuevo_nodo->setNext(aux1);
 
 	cout << "add correctamente" << endl;
 }
@@ -105,9 +100,9 @@ void mostrarLista(Nodo *lista)
 	while (actual != NULL)
 	{
 		i++;
-		int num = actual->dato;
+		int num = actual->getValor();
 		cout << "num " << i <<" : " << num << endl;
-		actual = actual->siguienteNodo;
+		actual = actual->getNext();
 	}
 
 }
@@ -130,9 +125,9 @@ bool encontrar(Nodo* lista, int numEncontrar)
 	bool encontrado = false;
 	while (actual != NULL)
 	{
-		if (actual->dato == numEncontrar)
+		if (actual->getValor() == numEncontrar)
 			encontrado = true;
-		actual = actual->siguienteNodo;
+		actual = actual->getNext();
 	}
 
 	if (encontrado)
@@ -147,15 +142,17 @@ void eliminar(Nodo*& lista, int numEncontrar)
 
 	if (lista != NULL)
 	{
-		Nodo* aux_borrar;
+		Nodo* aux_borrar = new Nodo();
 		Nodo* anterior = NULL;
 
-		aux_borrar = lista;
+		//aux_borrar = lista;
+		aux_borrar->setNext(lista);
+		
 
-		while ((aux_borrar != NULL) && (aux_borrar->dato != numEncontrar))
+		while ((aux_borrar != NULL) && (aux_borrar->getValor() != numEncontrar))
 		{
 			anterior = aux_borrar;
-			aux_borrar = aux_borrar->siguienteNodo;
+			aux_borrar = aux_borrar->getNext();
 		}
 
 		/*
@@ -170,13 +167,13 @@ void eliminar(Nodo*& lista, int numEncontrar)
 		// el elemento a borrar es el primero
 		else if (anterior == NULL)
 		{
-			lista = lista->siguienteNodo;
+			lista = lista->getNext();
 			delete aux_borrar;
 		}
 		// el elemento esta en medio de los nodos
 		else 
 		{
-			anterior->siguienteNodo = aux_borrar->siguienteNodo;
+			anterior->setNext(aux_borrar->getNext());
 			delete aux_borrar;
 		}
 	}
@@ -189,7 +186,7 @@ void eliminarLista(Nodo*& lista)
 	while (lista != NULL)
 	{
 		aux = lista;
-		lista = aux->siguienteNodo;
+		lista = aux->getNext();
 		delete aux;
 	}
 	

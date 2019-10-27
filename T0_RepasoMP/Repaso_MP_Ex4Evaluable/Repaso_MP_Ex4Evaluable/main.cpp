@@ -55,6 +55,7 @@ float testAfegeixTramesa(Exercici* e)
 		}
 		cout << "Comment :=>> ------------------------------------------" << endl;
 	}
+
 	return reduccio;
 }
 

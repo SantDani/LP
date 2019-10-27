@@ -1,0 +1,13 @@
+﻿  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Repaso_MP_Ex6EvaluableMatrizDinamica\main.cpp(670,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Repaso_MP_Ex6EvaluableMatrizDinamica\main.cpp(678,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Repaso_MP_Ex6EvaluableMatrizDinamica\main.cpp(686,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Repaso_MP_Ex6EvaluableMatrizDinamica\main.cpp(694,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Repaso_MP_Ex6EvaluableMatrizDinamica\main.cpp(702,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Repaso_MP_Ex6EvaluableMatrizDinamica\main.cpp(710,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+  Matriu.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Repaso_MP_Ex6EvaluableMatrizDinamica\main.cpp(718,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Repaso_MP_Ex6EvaluableMatrizDinamica\Matriu.cpp(105,14): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+  Generando código...
+C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Repaso_MP_Ex6EvaluableMatrizDinamica\Matriu.cpp(106,16): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+  Repaso_MP_Ex6EvaluableMatrizDinamica.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\T0_RepasoMP\Repaso_MP_Ex6EvaluableMatrizDinamica\Debug\Repaso_MP_Ex6EvaluableMatrizDinamica.exe

@@ -1,0 +1,4 @@
+﻿  Matriu.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyexctoPrimeraEntrega\ProyexctoPrimeraEntrega\Matriu.cpp(123,32): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyexctoPrimeraEntrega\ProyexctoPrimeraEntrega\Matriu.cpp(124,32): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  ProyexctoPrimeraEntrega.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyexctoPrimeraEntrega\Debug\ProyexctoPrimeraEntrega.exe
