@@ -35,7 +35,6 @@ bool LliuramentsEstudiant::eliminaTramesa(const string& data)
 	std::forward_list<Tramesa>::iterator itAnterior = m_trameses.before_begin();
 	std::forward_list<Tramesa>::iterator itActual = m_trameses.begin();
 	
-
 	while (!eliminarTramesa && (itActual != m_trameses.end()))
 	{
 		//cout << itActual->getData() << " esperando " << data << endl;

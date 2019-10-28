@@ -1,0 +1,3 @@
+﻿  Producte.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\S6_HerenciaFuncionesVirtuales\S6_HerenciaFuncionesVirtuales\Producte.cpp(14,19): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  S6_HerenciaFuncionesVirtuales.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\S6_HerenciaFuncionesVirtuales\Debug\S6_HerenciaFuncionesVirtuales.exe

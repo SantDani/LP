@@ -8,10 +8,16 @@ class Electrodomestic: public Producte
 {
 public:
 	//Consructores
-	Electrodomestic() : m_marca("") , m_model(""), m_volumM3(0){};
+	//Constructor por defecto
+	Electrodomestic() : m_marca(""), m_model(""), m_volumM3(0.0) {};
+	//Constructor con valores
+	Electrodomestic(string codi, float preu, string marca, string model, float volum)
+		: Producte(codi, preu) {m_marca = marca; m_model = model; m_volumM3 = volum;};
+	//Constructor copia
+	Electrodomestic(const Electrodomestic& e)
+		: Producte(e){m_marca = e.m_marca; m_model = e.m_model; m_volumM3 = e.m_volumM3;};
+	//destructor
 	~Electrodomestic();
-	Electrodomestic(string codi, float preu, string marca, string model, float volum) : Producte(codi, preu), m_marca(marca) , m_model(model), m_volumM3(volum){};
-	Electrodomestic(const Electrodomestic& e): Producte(e) {  };
 
 	//Get
 	string getMarca() const { return m_marca; }

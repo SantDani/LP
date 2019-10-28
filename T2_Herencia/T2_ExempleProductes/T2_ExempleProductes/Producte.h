@@ -1,13 +1,14 @@
 #pragma once
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Producte
 {
 public:
-	Producte() {//imprimir que tipo de constructor es}//inicializar los valores
-	~Producte() {}
-
+	//Constuctores
+	Producte() { m_codi = ""; m_preu = 0.0; } //imprimir que tipo de constructor es //inicializar los valores
+	~Producte() { cout << "destuctor base" << endl;}
 	Producte(string codi, float preu) { m_codi = codi, m_preu = preu; }
 	void setCodi(const string& codi) { m_codi = codi; }
 	void setPreu(float preu) { m_preu = preu; }

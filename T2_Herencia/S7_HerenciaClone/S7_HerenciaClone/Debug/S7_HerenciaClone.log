@@ -1,0 +1,11 @@
+﻿  Electrodomestic.cpp
+  Llibre.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\S7_HerenciaClone\S7_HerenciaClone\Electrodomestic.cpp(17,21): warning C4244: '-=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\S7_HerenciaClone\S7_HerenciaClone\Llibre.cpp(18,22): warning C4244: '-=': conversión de 'double' a 'float'; posible pérdida de datos
+  LlistaProductes.cpp
+  Main.cpp
+  Producte.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\S7_HerenciaClone\S7_HerenciaClone\Llibre.cpp(21,22): warning C4244: '-=': conversión de 'double' a 'float'; posible pérdida de datos
+  Generando código...
+C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\S7_HerenciaClone\S7_HerenciaClone\Producte.cpp(14,19): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  S7_HerenciaClone.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\S7_HerenciaClone\Debug\S7_HerenciaClone.exe

@@ -5,6 +5,7 @@ class Conjunt
 public:
 	Conjunt();
 	~Conjunt();
+	Conjunt(T& valor) { m_nElements = 0; m_maxElements = MAX_ELEMENTS; }
 	bool afegeix(const T& valor);
 	bool elimina(const T& valor); 
 	bool existeix(const T& valor) const;
@@ -35,6 +36,7 @@ Conjunt<T>::~Conjunt()
 {
 	delete[] m_elements;
 }
+
 template <class T>
 bool Conjunt<T>::afegeix(const T& valor)
 {

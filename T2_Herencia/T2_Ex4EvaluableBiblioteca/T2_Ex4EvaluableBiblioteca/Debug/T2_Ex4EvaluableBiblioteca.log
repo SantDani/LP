@@ -1,0 +1,12 @@
+﻿  Biblioteca.cpp
+  Exemplar.cpp
+  Llibre.cpp
+  Publicacio.cpp
+  Revista.cpp
+  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\T2_Ex4EvaluableBiblioteca\T2_Ex4EvaluableBiblioteca\Revista.cpp(22,15): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\T2_Ex4EvaluableBiblioteca\T2_Ex4EvaluableBiblioteca\main.cpp(124,14): warning C4101: 'pub': variable local sin referencia
+C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\T2_Ex4EvaluableBiblioteca\T2_Ex4EvaluableBiblioteca\main.cpp(197,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+  Generando código...
+C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\T2_Ex4EvaluableBiblioteca\T2_Ex4EvaluableBiblioteca\main.cpp(204,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+  T2_Ex4EvaluableBiblioteca.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\T2_Herencia\T2_Ex4EvaluableBiblioteca\Debug\T2_Ex4EvaluableBiblioteca.exe
