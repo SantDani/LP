@@ -1,0 +1,13 @@
+﻿  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(83,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(112,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(134,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(162,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(187,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(193,37): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(226,19): error C2676: '>=' binario: 'TValor' no define este operador o una conversión a un tipo aceptable para el operador predefinido
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(226,19): error C2676:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(226,19): error C2676:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(226,19): error C2676:             TValor=Persona
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(226,19): error C2676:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\T1_Templates\T1_Ex4EvaluableMap\T1_Ex4EvaluableMap\main.cpp(247,27): warning C4244: '+=': conversión de 'double' a 'float'; posible pérdida de datos

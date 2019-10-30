@@ -22,6 +22,8 @@ public:
 	// Get -Set
 	int getNumAlquilados() { return m_nAlquilados; }
 	int getNumDiasPrestec() { return m_nDiasPrestec; }
+
+	string getAutor() { return m_autor; }
 	bool prestar(int codi);
 	void devolver();
 	string getTipoClase() { return "L"; }

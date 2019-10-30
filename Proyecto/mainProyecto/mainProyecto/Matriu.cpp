@@ -19,6 +19,8 @@ Matriu::Matriu()
 
 	m_nColumnes = 0;
 	m_nFiles = 0;
+
+
 }
 
 Matriu::Matriu(string nomFitxer)
@@ -94,71 +96,15 @@ void Matriu::init(int nFiles, int nCol)
 
 void Matriu::setValor(int fila, int columna, float valor)
 {
-	if ((fila <= m_nFiles) && (columna <= m_nColumnes))
-	{
-		m_matriu[fila][columna] = valor;
-	}
+	// volremos suerte
 
 }
 
-Matriu Matriu::operator+(const Matriu& m)
-{
-	bool iguals = false;
-	if ((m.m_nFiles == m_nFiles) && (m.m_nColumnes == m_nColumnes))
-	{
-		iguals = true;
-		for (int i = 0; i < m_nFiles; i++)
-		{
-			for (int j = 0; j < m_nColumnes; j++)
-				m_matriu[i][j] += m.m_matriu[i][j];
-		}
-	}
 
 
-	if (iguals)
-	{
-		return *this;
-	}
-	else
-	{
-		return Matriu();
-	}
 
-}
 
-Matriu Matriu::operator+(float s)
-{
 
-	for (int i = 0; i < m_nFiles; i++)
-	{
-		for (int j = 0; j < m_nColumnes; j++)
-			m_matriu[i][j] += s;
-	}
-	return *this;
-}
-
-bool Matriu::operator==(const Matriu& m)
-{
-	bool iguales = true;
-
-	for (int i = 0; i < m_nFiles; i++)
-	{
-		for (int j = 0; j < m_nColumnes; j++)
-		{
-			int thisM = m_matriu[i][j];
-			int laOtraM = m.m_matriu[i][j];
-			if ((m_matriu[i][j] != m.m_matriu[i][j]))
-			{
-				iguales = false;
-				i = m_nFiles;
-				j = m_nColumnes;
-			}
-		}
-
-	}
-
-	return iguales;
-}
 
 void Matriu::ordenar()
 {
@@ -248,57 +194,19 @@ void Matriu::inicializarMatriz(int nFiles, int nCol)
 	m_vecValue.resize(nFiles, 0);
 }
 
-void Matriu::resize(int nFilas, int nCol)
+bool Matriu::resize(int nFilas, int nCol)
 {
-	bool resizeMayor = false;
-
-	if ((nFilas > m_nFiles) || (nCol > m_nColumnes))
-		resizeMayor = true;
-
-	Matriu auxMatriu(*this);
-	liberarMemoria();
-	inicializarMatriz(nFilas, nCol);
-
-	if (resizeMayor) {
-		//Copiamos el contenido de la matriz enviada a este objeto
-		for (int i = 0; i < auxMatriu.m_nFiles; i++)
-		{
-			for (int j = 0; j < auxMatriu.m_nColumnes; j++)
-			{
-				m_matriu[i][j] = auxMatriu.m_matriu[i][j];
-			}
-		}
-	}
-	else {
-		//Copiamos el contenido de la matriz enviada a este objeto
-		for (int i = 0; i < nFilas; i++)
-		{
-			for (int j = 0; j < nCol; j++)
-			{
-				m_matriu[i][j] = auxMatriu.m_matriu[i][j];
-			}
-		}
-	}
-
-	//auxMatriu.liberarMemoria();
-}
-
-void Matriu::transpose()
-{
-	Matriu auxMatriu(*this);
-	liberarMemoria();
-
-	inicializarMatriz(m_nColumnes, m_nFiles);
-
-	//Copiamos el contenido de la matriz enviada a este objeto
-	for (int i = 0; i < auxMatriu.m_nFiles; i++)
+	bool redimensionada = false;
+	if (nFilas > m_nFiles || nCol > m_nColumnes)
 	{
-		for (int j = 0; j < auxMatriu.m_nColumnes; j++)
-		{
-			m_matriu[j][i] = auxMatriu.m_matriu[i][j];
-		}
+		m_nFiles = nFilas;
+		m_nColumnes = nCol;
+		redimensionada = true;
 	}
+
+	return redimensionada;
 }
+
 
 ostream& operator<<(ostream& out, Matriu& m)
 {

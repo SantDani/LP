@@ -23,10 +23,10 @@ public:
 	//Funciones
 	void liberarMemoria();
 	void inicializarMatriz(int nFiles, int nCol);
-	void resize(int nFiles, int nColumnes);
+	bool resize(int nFiles, int nColumnes);
 	void transpose();
 	void init(int nFiles, int nCol);
-	bool esBuida() const { return (m_matriu == nullptr); }
+
 	
 	//Sobrecargas
 	Matriu& operator=(const Matriu& m);
@@ -38,7 +38,6 @@ public:
 private:
 	void ordenar();
 	void swap(vector<float> &vec, int posActual);
-	float** m_matriu;
 	int m_nFiles;
 	int m_nColumnes;
 	

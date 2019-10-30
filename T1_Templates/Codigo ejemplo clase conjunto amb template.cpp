@@ -2,6 +2,17 @@
 #include <iostream>
 using namespace std;
 
+
+template<class T>
+inline T& SmartPointer<T>:: operator*()
+{
+	cout << "op" << endl;
+	if (m_pointer == NULL)
+		cout << "Error: apuntar a NULL" << endl;
+
+	return *m_pointer
+}
+
 template <class T>
 class Conjunt
 {

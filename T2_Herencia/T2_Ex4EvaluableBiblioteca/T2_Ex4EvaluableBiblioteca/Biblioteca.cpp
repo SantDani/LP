@@ -84,7 +84,7 @@ bool Biblioteca::prestar(const string& idUsuari, const string& codi,
 		if ((*it)->getCodi() == codi)//encontrado
 		{
 			trobat = true;
-			if (((*it))->getTipoClase() == LLIBRE)
+			if ( (*it)->getTipoClase() == LLIBRE)
 			{
 				int diasPrestamo = (*it)->getNumDiasPrestec();
 				if ((*it)->prestar(1))

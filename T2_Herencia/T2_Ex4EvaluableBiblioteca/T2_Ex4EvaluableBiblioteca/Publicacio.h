@@ -20,6 +20,7 @@ public:
 	virtual  int getNumDiasPrestec() { return -1; };
 	virtual bool prestar(int codi , Data dataPrestec) { return 0; };
 	virtual bool prestar(int codi) { return 0; };
+	string getAutor() { return getAutor(); };
 	
 	
 	
