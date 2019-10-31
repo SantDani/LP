@@ -1,19 +1,5 @@
-﻿myMain.obj : error LNK2005: ya se definió _main en main.obj
-main.obj : error LNK2019: símbolo externo "public: __thiscall MatriuSparse::MatriuSparse(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0MatriuSparse@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) sin resolver al que se hace referencia en la función _main
-myMain.obj : error LNK2001: símbolo externo "public: __thiscall MatriuSparse::MatriuSparse(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0MatriuSparse@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) sin resolver
-main.obj : error LNK2019: símbolo externo "public: __thiscall MatriuSparse::MatriuSparse(class MatriuSparse const &)" (??0MatriuSparse@@QAE@ABV0@@Z) sin resolver al que se hace referencia en la función _main
-main.obj : error LNK2019: símbolo externo "public: bool __thiscall MatriuSparse::getVal(int,int,float &)" (?getVal@MatriuSparse@@QAE_NHHAAM@Z) sin resolver al que se hace referencia en la función _main
-myMain.obj : error LNK2001: símbolo externo "public: bool __thiscall MatriuSparse::getVal(int,int,float &)" (?getVal@MatriuSparse@@QAE_NHHAAM@Z) sin resolver
-main.obj : error LNK2019: símbolo externo "public: bool __thiscall MatriuSparse::setVal(int,int,float)" (?setVal@MatriuSparse@@QAE_NHHM@Z) sin resolver al que se hace referencia en la función _main
-myMain.obj : error LNK2001: símbolo externo "public: bool __thiscall MatriuSparse::setVal(int,int,float)" (?setVal@MatriuSparse@@QAE_NHHM@Z) sin resolver
-main.obj : error LNK2019: símbolo externo "public: class MatriuSparse & __thiscall MatriuSparse::operator*(float)" (??DMatriuSparse@@QAEAAV0@M@Z) sin resolver al que se hace referencia en la función _main
-myMain.obj : error LNK2001: símbolo externo "public: class MatriuSparse & __thiscall MatriuSparse::operator*(float)" (??DMatriuSparse@@QAEAAV0@M@Z) sin resolver
-main.obj : error LNK2019: símbolo externo "public: class std::vector<float,class std::allocator<float> > __thiscall MatriuSparse::operator*(class std::vector<float,class std::allocator<float> >)" (??DMatriuSparse@@QAE?AV?$vector@MV?$allocator@M@std@@@std@@V12@@Z) sin resolver al que se hace referencia en la función _main
-myMain.obj : error LNK2001: símbolo externo "public: class std::vector<float,class std::allocator<float> > __thiscall MatriuSparse::operator*(class std::vector<float,class std::allocator<float> >)" (??DMatriuSparse@@QAE?AV?$vector@MV?$allocator@M@std@@@std@@V12@@Z) sin resolver
-main.obj : error LNK2019: símbolo externo "public: class MatriuSparse & __thiscall MatriuSparse::operator/(float)" (??KMatriuSparse@@QAEAAV0@M@Z) sin resolver al que se hace referencia en la función _main
-main.obj : error LNK2019: símbolo externo "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class MatriuSparse &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@AAVMatriuSparse@@@Z) sin resolver al que se hace referencia en la función _main
-myMain.obj : error LNK2001: símbolo externo "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class MatriuSparse &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@AAVMatriuSparse@@@Z) sin resolver
-myMain.obj : error LNK2019: símbolo externo "public: __thiscall MatriuSparse::MatriuSparse(void)" (??0MatriuSparse@@QAE@XZ) sin resolver al que se hace referencia en la función "void __cdecl testConstructorAsignacion(void)" (?testConstructorAsignacion@@YAXXZ)
-myMain.obj : error LNK2019: símbolo externo "public: __thiscall MatriuSparse::MatriuSparse(int,int)" (??0MatriuSparse@@QAE@HH@Z) sin resolver al que se hace referencia en la función "void __cdecl testConstructorAsignacion(void)" (?testConstructorAsignacion@@YAXXZ)
-myMain.obj : error LNK2019: símbolo externo "public: class MatriuSparse & __thiscall MatriuSparse::operator=(class MatriuSparse const &)" (??4MatriuSparse@@QAEAAV0@ABV0@@Z) sin resolver al que se hace referencia en la función "void __cdecl testConstructorAsignacion(void)" (?testConstructorAsignacion@@YAXXZ)
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\Debug\ProyectoByCoord.exe : fatal error LNK1120: 11 externos sin resolver
+﻿  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\main.cpp(251,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\main.cpp(454,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\main.cpp(659,21): warning C4018: '<': no coinciden signed/unsigned
+  ProyectoByCoord.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\Debug\ProyectoByCoord.exe

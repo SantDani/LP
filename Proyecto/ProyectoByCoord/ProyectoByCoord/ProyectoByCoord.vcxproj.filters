@@ -21,12 +21,12 @@
     <ClInclude Include="myMain.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="myMain.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="MatriuSparse.cpp">
@@ -38,6 +38,9 @@
       <Filter>Archivos de recursos</Filter>
     </Text>
     <Text Include="..\..\mainProyecto\mainProyecto\ResX1COORDEsperat.txt">
+      <Filter>Archivos de recursos</Filter>
+    </Text>
+    <Text Include="VectProdX1Esperat.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
   </ItemGroup>

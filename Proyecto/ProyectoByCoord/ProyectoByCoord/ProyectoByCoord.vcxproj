@@ -123,16 +123,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="main.h" />
     <ClInclude Include="MatriuSparse.h" />
     <ClInclude Include="myMain.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MatriuSparse.cpp" />
-    <ClCompile Include="myMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\mainProyecto\mainProyecto\ResX1COORDEsperat.txt" />
+    <Text Include="VectProdX1Esperat.txt" />
     <Text Include="Xarxa1.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -5,7 +5,7 @@
 #include<vector>
 #include<iterator> // for iterators 
 
-#define style true
+#define style false
 using namespace std;
 //Constructores
 
@@ -45,8 +45,8 @@ MatriuSparse::MatriuSparse(string nomFitxer)
 		miFichero.close();
 	}
 	else
-		cout << "Error al leer el fichero" << endl;
-	this->ordenar();
+		throw "Error al leer el fichero: " +nomFitxer ;
+	//this->ordenar();
 }
 
 MatriuSparse::MatriuSparse(int nFiles, int nColumnes)
@@ -74,6 +74,10 @@ MatriuSparse& MatriuSparse::operator*(float num)
 
 vector<float> MatriuSparse::operator*(vector<float> vect)
 {
+	if (vect.size() > m_nColumnes)
+	{
+		throw "ERROR: para multiplicar el vector ha de ser igual de largo que el numero de columnas de la matriz";
+	}
 	int numFila = 0;
 	int posFila = 0;
 	int sizeVect = vect.size();
@@ -98,11 +102,16 @@ vector<float> MatriuSparse::operator*(vector<float> vect)
 
 MatriuSparse& MatriuSparse::operator/(float num)
 {
+	if (num == 0)
+	{
+		throw "Error al dividir entre 0!" ;
+	}
+	
 	int posFila = 0;
 	MatriuSparse* mAux(new MatriuSparse(*this));
 	while (posFila < m_vecFila.size())
 	{
-		
+
 		(*mAux).m_vecValue[posFila] = m_vecValue[posFila] / num;
 		posFila++;
 	}
@@ -369,8 +378,8 @@ bool MatriuSparse::getVal(int  fila, int  col,  float& valor)
 			{
 				if (m_vecFila[contFila] > fila)
 				{
-					//no encontrado salimos. Hemos cambiado de fila sin encontrar la columna
-					return false;
+					//no encontrado valor, por lo tanto la posicion vale 0. Valor por defecto
+					return true;
 				}
 			}
 			contFila++;
@@ -393,11 +402,11 @@ void MatriuSparse::inicializarMatriz(int nFiles, int nCol)
 ostream& operator<<(ostream& out, MatriuSparse& m)
 {
 	// volveremos, a valorar si incrementamos filas y columnas aqui o por defecto
-	cout << "MATRIU DE (FILES: " << m.m_nFiles  << " COLUMNES: " << m.m_nColumnes  << " )" << endl;
-	cout << "VALORS (FILA::COL::VALOR)" << endl;
+	out << "MATRIU DE (FILES: " << m.m_nFiles + 1  << "  COLUMNES: " << m.m_nColumnes + 1  << " )" << endl;
+	out << "VALORS (FILA::COL::VALOR)" << endl;
 	for (int i = 0; i < m.m_vecFila.size(); i++)
 	{
-		out << i << "( " << m.m_vecFila[i] << " :: " << m.m_vecCol[i] << " :: " << m.m_vecValue[i] << " )" << endl;
+		out << "( " << m.m_vecFila[i] << " :: " << m.m_vecCol[i] << " :: " << m.m_vecValue[i] << " ) " << endl ;
 	}
 	return out;
 }
