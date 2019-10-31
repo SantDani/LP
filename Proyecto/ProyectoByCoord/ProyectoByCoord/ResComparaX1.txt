@@ -1,0 +1,3 @@
+Error num 1 a linia 25
+Error num 2 a linia 26
+Fitxer ResX1COORDEsperat.txt es mes curt que ResX1COORD.txt

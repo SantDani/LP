@@ -1,0 +1,57 @@
+﻿  MatriuSparse.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(30,18): warning C4101: 'valor': variable local sin referencia
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(64,17): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(77,18): warning C4018: '>': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(86,17): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(112,17): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(310,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(312,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(316,11): warning C4101: 'aux': variable local sin referencia
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(350,12): warning C4244: 'inicializando': conversión de '_Ty' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(350,12): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(350,12): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(350,12): warning C4244:             _Ty=int
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(350,12): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(352,19): warning C4244: '=': conversión de 'float' a '_Ty'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(352,19): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(352,19): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(352,19): warning C4244:             _Ty=int
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(352,19): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(357,10): warning C4244: '=': conversión de 'const int' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(368,19): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(399,28): warning C4244: 'argumento': conversión de 'const int' a 'const _Ty'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(399,28): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(399,28): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(399,28): warning C4244:             _Ty=float
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(399,28): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(407,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244: 'inicializando': conversión de 'const int' a '_Objty'; posible pérdida de datos
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244:             _Objty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message : vea la referencia a la creación de instancias de plantilla de función "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const int&>(_Alloc &,_Objty *const ,const int &)" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :             _Alloc=std::allocator<float>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :             _Ty=float,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :             _Objty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message : vea la referencia a la creación de instancias de plantilla de función "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const int&>(_Alloc &,_Objty *const ,const int &)" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Alloc=std::allocator<float>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Ty=float,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Objty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message : vea la referencia a la creación de instancias de plantilla de función "void std::vector<float,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<const int&>(const int &)" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message :             _Ty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message :         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(42): message : vea la referencia a la creación de instancias de plantilla de función "void std::vector<float,std::allocator<_Ty>>::emplace_back<const int&>(const int &)" que se está compilando
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(42): message :         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(42): message :         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(42): message :             _Ty=float
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(42): message :         ]
+  ProyectoByCoord.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\ProyectoByCoord\Debug\ProyectoByCoord.exe

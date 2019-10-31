@@ -1,0 +1,7 @@
+[POS: 1 ; VAL: 21 ] 
+[POS: 2 ; VAL: 2 ] 
+[POS: 3 ; VAL: 2 ] 
+[POS: 4 ; VAL: 4 ] 
+[POS: 5 ; VAL: 2 ] 
+[POS: 6 ; VAL: 1 ] 
+[POS: 7 ; VAL: 1 ] 

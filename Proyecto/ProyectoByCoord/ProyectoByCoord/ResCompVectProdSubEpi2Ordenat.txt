@@ -1,0 +1,3 @@
+Error num 1 a linia 1
+Error num 2 a linia 2
+Fitxer VectProdSubEpi2OrdenatCOORD.txt es mes curt que VectProdSubEpi2OrdenatCOORDEsperat.txt

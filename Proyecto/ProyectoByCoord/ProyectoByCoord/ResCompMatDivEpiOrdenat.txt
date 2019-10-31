@@ -1,0 +1,2 @@
+Error num 1 a linia 508843
+Fitxer MatDivEpiOrdenatCOORDEsperat.txt es mes curt que MatDivEpiOrdenatCOORD.txt

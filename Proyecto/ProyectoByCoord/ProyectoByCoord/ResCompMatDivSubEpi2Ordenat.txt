@@ -1,0 +1,2 @@
+Error num 1 a linia 34
+Fitxer MatDivSubEpi2OrdenatCOORDEsperat.txt es mes curt que MatDivSubEpi2OrdenatCOORD.txt

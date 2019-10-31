@@ -1,0 +1,9 @@
+Error num 1 a linia 1
+Error num 2 a linia 2
+Error num 3 a linia 3
+Error num 4 a linia 4
+Error num 5 a linia 5
+Error num 6 a linia 6
+Error num 7 a linia 7
+Error num 8 a linia 8
+Fitxer VectProdX1COORD.txt es mes curt que VectProdX1COORDEsperat.txt

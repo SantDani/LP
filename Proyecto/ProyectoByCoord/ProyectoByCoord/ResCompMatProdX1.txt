@@ -1,0 +1,6 @@
+Error num 1 a linia 20
+Error num 2 a linia 21
+Error num 3 a linia 22
+Error num 4 a linia 23
+Error num 5 a linia 26
+Fitxer MatProdX1COORDEsperat.txt es mes curt que MatProdX1COORD.txt
