@@ -1,2 +1,19 @@
-Error num 1 a linia 34
-Fitxer ResSubEpi2OrdenatCOORDEsperat.txt es mes curt que ResSubEpi2OrdenatCOORD.txt
+Error num 1 a linia 15
+Error num 2 a linia 16
+Error num 3 a linia 17
+Error num 4 a linia 18
+Error num 5 a linia 19
+Error num 6 a linia 20
+Error num 7 a linia 21
+Error num 8 a linia 22
+Error num 9 a linia 23
+Error num 10 a linia 24
+Error num 11 a linia 25
+Error num 12 a linia 26
+Error num 13 a linia 27
+Error num 14 a linia 28
+Error num 15 a linia 29
+Error num 16 a linia 30
+Error num 17 a linia 31
+Error num 18 a linia 32
+Fitxer ResSubEpi2OrdenatCOORD.txt es mes curt que ResSubEpi2OrdenatCOORDEsperat.txt

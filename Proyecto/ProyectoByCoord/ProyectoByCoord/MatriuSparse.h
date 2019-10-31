@@ -22,6 +22,8 @@ public:
 	int getNFiles() const { return m_nFiles; }
 	int getNColumnes() const { return m_nColumnes; }
 	bool getVal(int fila, int columna,  float& valor) ;
+	bool getBinario(float& valor, int fila, int col);
+	bool getInteractivo(float& valor, int fila, int col);
 	bool setVal(int fila, int columna, float valor);
 	void addElementoMatriz(std::vector<int>::iterator& itFila, int& fila, std::vector<int>::iterator& itCol, int& columna, std::vector<float>::iterator& itValor, float& valor);
 	bool resize(int fila, int columna);
@@ -37,7 +39,7 @@ public:
 	vector<float> operator*(vector<float> vect);
 	MatriuSparse& operator=(const MatriuSparse& m);
 	MatriuSparse& operator/(float divisor);
-	bool operator==(const MatriuSparse& m);
+	
 	friend ostream& operator<<(ostream& out, MatriuSparse& m);
 
 private:

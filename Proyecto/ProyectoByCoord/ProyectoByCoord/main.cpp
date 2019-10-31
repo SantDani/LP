@@ -1,9 +1,7 @@
 #include "MatriuSparse.h"
 
-using namespace std;
 
-#define mostrar true
-
+#define mostrar false
 bool IgualFitxers(string nomF1, string nomF2, string nomFRes)
 {
 	ifstream f1, f2;
@@ -26,15 +24,28 @@ bool IgualFitxers(string nomF1, string nomF2, string nomFRes)
 			getline(f2, b);
 			if ((pos = b.find_first_of(char(13))) < string::npos)
 				b = b.substr(0, pos);
+
+			/*if (mostrar)
+			{
+				cout << a << " vs " << b << endl;
+			}*/
 			if (a != b)
 			{
 				if (mostrar)
+				{
 					cout << "miFichero\t" << a << endl;
-					cout << "esperado\t"<< b << endl << endl;
+					cout << "esperado\t" << b << endl << endl;
+				}
+				
 				++cont;
 				fitxCompara << flush << "Error num " << cont << " a linia " << linia << endl << flush;
 				iguals = false;
 			}
+			/*else
+			{
+				if (mostrar)
+				cout << " ok";
+			}*/
 		}
 		if (!f1.eof() && f2.eof())
 		{
