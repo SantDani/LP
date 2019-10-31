@@ -2,26 +2,28 @@
 #include <cmath>
 #include<fstream>
 #include <iostream>
+#include<vector>
+#include<iterator> // for iterators 
 
 using namespace std;
 //Constructores
-Matriu::~Matriu()
+MatriuSparse::~MatriuSparse()
 {
 	liberarMemoria();
 }
 
 
-Matriu::Matriu()
+MatriuSparse::MatriuSparse()
 {
-	m_vecFilaX.resize(0);
-	m_vecColY.resize(0);
+	m_vecFila.resize(0);
+	m_vecCol.resize(0);
 	m_vecValue.resize(0);
 
 	m_nColumnes = 0;
 	m_nFiles = 0;
 }
 
-Matriu::Matriu(string nomFitxer)
+MatriuSparse::MatriuSparse(string nomFitxer)
 {
 	ifstream miFichero; //Declaro el objeto ifstream para poder leer el fichero
 	miFichero.open(nomFitxer);
@@ -36,14 +38,11 @@ Matriu::Matriu(string nomFitxer)
 			
 			miFichero >> fila >> col;
 
-			if (m_nFiles < fila)
-				m_nFiles = fila;
-			if (m_nColumnes < col)
-				m_nColumnes = col;
+			resize(fila, col);
 
-			m_vecFilaX.emplace_back(fila);
-			m_vecColY.emplace_back(col);
-			m_vecValue.emplace_back(DEFAULT_VALUE);
+			m_vecFila.emplace_back(fila);
+			m_vecCol.emplace_back(col);
+			m_vecValue.emplace_back(DEFAULT_VEC_VALUE);
 			i++;
 		}
 		miFichero.close();
@@ -53,28 +52,28 @@ Matriu::Matriu(string nomFitxer)
 	this->ordenar();
 }
 
-Matriu::Matriu(int nFiles, int nColumnes)
+MatriuSparse::MatriuSparse(int nFiles, int nColumnes)
 {
 	
 	inicializarMatriz(nFiles, nColumnes);
 }
 
-Matriu::Matriu(const Matriu& matriu)
+MatriuSparse::MatriuSparse(const MatriuSparse& matriu)
 {
-	checkFilaColumna(matriu.m_nFiles, matriu.m_nColumnes);
+	resize(matriu.m_nFiles, matriu.m_nColumnes);
 
 	//Copiamos el contenido de la matriz enviada a este objeto
-	m_vecFilaX = matriu.m_vecFilaX;
-	m_vecColY = matriu.m_vecColY;
+	m_vecFila = matriu.m_vecFila;
+	m_vecCol = matriu.m_vecCol;
 	m_vecValue = matriu.m_vecValue;	
 }
 
 
-Matriu& Matriu::operator*(float num)
+MatriuSparse& MatriuSparse::operator*(float num)
 {
 	int posFila = 0;
-	Matriu mAux(*this);
-	while (posFila < m_vecFilaX.size())
+	MatriuSparse mAux(*this);
+	while (posFila < m_vecFila.size())
 	{
 		mAux.m_vecValue[posFila] = m_vecValue[posFila] * num;
 		posFila++;
@@ -83,12 +82,12 @@ Matriu& Matriu::operator*(float num)
 	return  mAux;
 }
 
-Matriu Matriu::operator/(float num)
+MatriuSparse MatriuSparse::operator/(float num)
 {
-	Matriu mAux(*this);
+	MatriuSparse mAux(*this);
 	
 	int posFila = 0;
-	while (posFila < m_vecFilaX.size())
+	while (posFila < m_vecFila.size())
 	{
 		mAux.m_vecValue[posFila] = m_vecValue[posFila] * num;
 		posFila++;
@@ -97,18 +96,18 @@ Matriu Matriu::operator/(float num)
 	return  mAux;
 }
 
-vector<float> Matriu::operator*(vector<float> vect)
+vector<float> MatriuSparse::operator*(vector<float> vect)
 {
 	int numFila = 0;
 	int posFila = 0;
 	int sizeVect = vect.size();
 	vector<float> vecAux(sizeVect, 0);
 
-	while (posFila < m_vecFilaX.size())
+	while (posFila < m_vecFila.size())
 	{
-		if (m_vecFilaX[posFila] == numFila)
+		if (m_vecFila[posFila] == numFila)
 		{
-			int posCol = m_vecColY[posFila];
+			int posCol = m_vecCol[posFila];
 			vecAux[posCol] += m_vecValue[posCol] * vect[posCol];
 		}
 		else 
@@ -121,13 +120,13 @@ vector<float> Matriu::operator*(vector<float> vect)
 	return vecAux;
 }
 
-Matriu& Matriu::operator=(const Matriu& matriu)
+MatriuSparse& MatriuSparse::operator=(const MatriuSparse& matriu)
 {
-	checkFilaColumna(matriu.m_nFiles, matriu.m_nColumnes);
+	resize(matriu.m_nFiles, matriu.m_nColumnes);
 
 	//Copiamos el contenido de la matriz enviada a este objeto
-	m_vecFilaX = matriu.m_vecFilaX;
-	m_vecColY = matriu.m_vecColY;
+	m_vecFila = matriu.m_vecFila;
+	m_vecCol = matriu.m_vecCol;
 	m_vecValue = matriu.m_vecValue;
 	
 	return *this;
@@ -135,91 +134,145 @@ Matriu& Matriu::operator=(const Matriu& matriu)
 
 
 
-void Matriu::init(int nFiles, int nCol)
+void MatriuSparse::init(int nFiles, int nCol)
 {
 	inicializarMatriz(nFiles, nCol);
 }
 
-void Matriu::setValor(int fila, int columna, float valor)
+bool MatriuSparse::existe(int nFila, int nCol)
 {
-	checkFilaColumna(fila, columna);
-	
+	bool existe = false;
+	//existira si encuentro la fila y la columna de la posicion
+	//volveremos
+	return existe;
+}
+
+
+
+bool MatriuSparse::setVal(int fila, int columna, float valor)
+{
 	bool trobat = false;
-	vector<int>::iterator itFilas = m_vecFilaX.begin();
-	vector<int>::iterator itCol = m_vecColY.begin();
-	vector<int>::iterator itValor = m_vecColY.begin();
-	int cont = 0;
-	int posAdd = 0;
-	while (itFilas != m_vecFilaX.end() && !trobat)
+	if (filaColMayor(fila, columna))
 	{
-		if (*itFilas == fila) 
+		//posicion indicada mayor que la matriz actual
+		//por lo tanto no encontramos el valor
+		//add valor al final
+		resize(fila, columna);//modificamos dimensiones
+
+		valor = DEFAULT_VEC_VALUE;
+		m_vecFila.push_back(fila);
+		m_vecCol.push_back(columna);
+		m_vecValue.push_back(DEFAULT_VEC_VALUE);
+		return trobat;
+	}
+	
+	
+	if (!false)
+	{
+		vector<int>::iterator itFila = m_vecFila.begin();
+		
+		vector<int>::iterator itCol = m_vecCol.begin();
+		vector<float>::iterator itValor = m_vecValue.begin();
+		int cont = 0;
+		vector<int>::iterator end = m_vecFila.end();
+		while (itFila != end && !trobat)
 		{
-			
-			if (*itCol >= columna)// 
+			cout << " valor fila : "<< *itFila << endl;
+			if ((*itFila) <= fila)
 			{
-				if (*itCol == columna)
+				/*Podemos hacer la condicion siguiente porque el vector
+				esta ordenado. de esta manera tambien podemos add los nuevos elementos
+				de manera ordenada*/
+				if ((*itFila) == fila)
 				{
-					//en el caso que exista el valor lo modificamos
-					*itValor = valor;
-					trobat = true;
+					cout << " valor col : " << *itCol << endl;
+					if (columna < *itCol)
+					{
+						//add valor que no exisita
+						m_vecFila.insert(itFila, fila);
+						m_vecCol.insert(itCol, columna);
+						m_vecValue.insert(itValor, valor);
+						return false;//hemos add el valor por lo tanto no lo hemos encontrado
+					} 
+
+					//si es igual modificamos
+
+
+					//modificamos el valor porque existe
+					if (*itCol == columna)
+					{
+						valor = *itValor;
+						trobat = true;
+					}
+
+					
 				}
-				else
-				{
-				}
-				 
+				
 				
 			}
-
+			else if(*itFila > fila)
+			{
+				if (!trobat)
+				{
+					m_vecFila.insert(itFila, fila);
+					m_vecCol.insert(itCol, columna);
+					m_vecValue.insert(itValor, valor);
+					return trobat;
+				}
 			
+			}
+			//nadie ha cumplido 
+			//veamos si el siguiente cumple alguna condicion
+			++itFila;
+			++itCol;
+			++itValor;
 		}
-		itFilas++;
-		itCol++;
-		itValor++;
-		cont++;
-
 		
 	}
-
-	
-	if (!trobat)
+	if (!trobat) // pensar como hacerlo
 	{
-
-	
-		// es mayor por lo tanto no hemos encontrado el  elemento
-				//esto significa que en esta pos add el elemento no encontrado
-		cout << "\n\n luego de add--------------------------" << endl;
-		m_vecFilaX.insert(m_vecFilaX.begin() + posAdd, fila);
-		m_vecColY.insert(m_vecColY.begin() + posAdd, columna);
-		m_vecValue.insert(m_vecValue.begin() + posAdd, valor);
-		//posAdd = cont;
-		
+		//cambiamos de fila y elemento menor no encontrado
+		/*Significa que no existe por lo tanto add*/
+		m_vecFila.push_back(fila);
+		m_vecCol.push_back(columna);
+		m_vecValue.push_back(DEFAULT_VEC_VALUE);
+		return false;
 	}
-
 	
+	return trobat;
 }
-/*En el caso que las nuevas filas y columnas sean mayores que las actuales se actualizan. Ademas se mantiene una matriz cuadrada.*/
-bool Matriu::checkFilaColumna(int nuevaFila, int nuevaColumna)
+	
+	/*En el caso que las nuevas filas y columnas sean mayores que las actuales se actualizan de manera 
+que la dimension de la matriz sea cuadrada.*/
+bool MatriuSparse::resize(int nuevaFila, int nuevaColumna)
 {
 	bool nuevaDimension = false;
 
-	if (nuevaFila > m_nFiles) 
+	if (nuevaFila > m_nFiles || nuevaColumna > m_nColumnes)
 	{
 		m_nFiles = nuevaFila;
 		m_nColumnes = nuevaFila;
-		nuevaDimension = true;
-	}
-		
-	if (nuevaColumna > m_nColumnes)
-	{
-		m_nColumnes = nuevaColumna;
-		m_nFiles = nuevaColumna;
 		nuevaDimension = true;
 	}
 
 	return nuevaDimension;
 }
 
-Matriu Matriu::operator+(const Matriu& m)
+bool MatriuSparse::filaColMayor(int fila, int columna)
+{
+	bool mayor = false;
+
+	if (fila > m_nFiles || columna > m_nColumnes)
+	{
+		m_nFiles = fila;
+		m_nColumnes = columna;
+		mayor = true;
+	}
+
+	return mayor;
+}
+
+MatriuSparse MatriuSparse::operator+(const MatriuSparse& m)
 {
 	bool iguals = false;
 	if ((m.m_nFiles == m_nFiles) && (m.m_nColumnes == m_nColumnes))
@@ -241,12 +294,12 @@ Matriu Matriu::operator+(const Matriu& m)
 	}
 	else
 	{
-		return Matriu();
+		return MatriuSparse();
 	}
 
 }
 
-Matriu Matriu::operator+(float s)
+MatriuSparse MatriuSparse::operator+(float s)
 {
 
 	for (int i = 0; i < m_nFiles; i++)
@@ -261,7 +314,7 @@ Matriu Matriu::operator+(float s)
 
 
 
-bool Matriu::operator==(const Matriu& m)
+bool MatriuSparse::operator==(const MatriuSparse& m)
 {
 	bool iguales = true;
 
@@ -283,30 +336,30 @@ bool Matriu::operator==(const Matriu& m)
 	return iguales;
 }
 
-void Matriu::ordenar()
+void MatriuSparse::ordenar()
 {
-	for (int j = 0; j< m_vecFilaX.size() - 1; j++)
+	for (int j = 0; j< m_vecFila.size() - 1; j++)
 	{
-		for (int i = 0; i < m_vecFilaX.size() -1; i++)
+		for (int i = 0; i < m_vecFila.size() -1; i++)
 		{
-			if (m_vecFilaX[i] >= m_vecFilaX[i + 1])
+			if (m_vecFila[i] >= m_vecFila[i + 1])
 			{
 				float aux;
-				if (m_vecFilaX[i] > m_vecFilaX[i + 1])
+				if (m_vecFila[i] > m_vecFila[i + 1])
 				{
 					//cout << "cambio filas X : " << m_vecX[i] << "swap by " << m_vecX[i + 1] << endl;
-					swap(m_vecFilaX, i);
-					swap(m_vecColY, i);
+					swap(m_vecFila, i);
+					swap(m_vecCol, i);
 					swap(m_vecValue, i);
 				}
 				
-				if (m_vecFilaX[i] == m_vecFilaX[i + 1]) 
+				if (m_vecFila[i] == m_vecFila[i + 1]) 
 				{
-					if (m_vecColY[i] > m_vecColY[i + 1])
+					if (m_vecCol[i] > m_vecCol[i + 1])
 					{
 						//cout << "cambio col Y : " << m_vecX[i] << "swap by " << m_vecX[i + 1] << endl;
-						swap(m_vecFilaX, i);
-						swap(m_vecColY, i);
+						swap(m_vecFila, i);
+						swap(m_vecCol, i);
 						swap(m_vecValue, i);
 					}
 				}
@@ -318,14 +371,14 @@ void Matriu::ordenar()
 }
 
 
-void Matriu::swap(vector<float>& vec, int posActual)
+void MatriuSparse::swap(vector<float>& vec, int posActual)
 {
 	float aux = vec[posActual + 1];
 	vec[posActual + 1] = vec[posActual];
 	vec[posActual] = aux;
 }
 
-void Matriu::swap(vector<int>& vec, int posActual)
+void MatriuSparse::swap(vector<int>& vec, int posActual)
 {
 	float aux = vec[posActual + 1];
 	vec[posActual + 1] = vec[posActual];
@@ -335,19 +388,19 @@ void Matriu::swap(vector<int>& vec, int posActual)
 
 
 
-bool Matriu::getValor(int fila, int columna, int &valor) 
+bool MatriuSparse::getVal(int fila, int columna, int &valor) 
 {
 	bool trobat = false;
 	valor = std::nanf("");
 	//se puede mejorar la eficiencia, reccorrer solo las filas que queremos
-	for (int i = 0; i < m_vecFilaX.size(); i++)
+	for (int i = 0; i < m_vecFila.size(); i++)
 	{
-		if (m_vecFilaX[i] == fila)
+		if (m_vecFila[i] == fila)
 		{
-			if (m_vecColY[i] == columna)
+			if (m_vecCol[i] == columna)
 			{
 				valor = m_vecValue[i];
-				i = m_vecFilaX.size();
+				i = m_vecFila.size();
 			}
 				
 		}
@@ -357,7 +410,7 @@ bool Matriu::getValor(int fila, int columna, int &valor)
 
 
 
-void Matriu::liberarMemoria()
+void MatriuSparse::liberarMemoria()
 {
 	// MOD
 	////eliminar columnas
@@ -367,21 +420,21 @@ void Matriu::liberarMemoria()
 	//delete[] m_matriu;
 }
 
-void Matriu::inicializarMatriz(int nFiles, int nCol)
+void MatriuSparse::inicializarMatriz(int nFiles, int nCol)
 {
 	m_nFiles = nFiles;
 	m_nColumnes = nCol;
 
-	m_vecFilaX.resize(nFiles,0);
-	m_vecColY.resize(nFiles, 0);
-	m_vecValue.resize(nFiles, DEFAULT_VALUE);
+	m_vecFila.resize(nFiles,0);
+	m_vecCol.resize(nFiles, 0);
+	m_vecValue.resize(nFiles, DEFAULT_VEC_VALUE);
 }
 
 
 
-void Matriu::transpose()
+void MatriuSparse::transpose()
 {
-	Matriu auxMatriu(*this);
+	MatriuSparse auxMatriu(*this);
 	liberarMemoria();
 
 	inicializarMatriz(m_nColumnes, m_nFiles);
@@ -396,14 +449,14 @@ void Matriu::transpose()
 	}
 }
 
-ostream& operator<<(ostream& out, Matriu& m)
+ostream& operator<<(ostream& out, MatriuSparse& m)
 {
 	// volveremos, a valorar si incrementamos filas y columnas aqui o por defecto
 	cout << "MATRIU DE (FILES: " << m.m_nFiles + 1 << " COLUMNES: " << m.m_nColumnes + 1<< " )" << endl;
 	cout << "VALORS (FILA::COL::VALOR)" << endl;
-	for (int i = 0; i < m.m_vecFilaX.size(); i++)
+	for (int i = 0; i < m.m_vecFila.size(); i++)
 	{
-		out << i << "( " << m.m_vecFilaX[i] << " :: " << m.m_vecColY[i] << " :: "<< m.m_vecValue[i]<<" )" << endl;
+		out << i << "( " << m.m_vecFila[i] << " :: " << m.m_vecCol[i] << " :: "<< m.m_vecValue[i]<<" )" << endl;
 	}
 	return out;
 }

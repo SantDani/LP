@@ -13,11 +13,14 @@ int main()
 	//testConstructorAsignacion();
 	string fichero = "Xarxa1.txt";
 
-	Matriu m(fichero);
+	MatriuSparse m(fichero);
 	 
 	cout << m;
 
-	m.setValor(7, 7, 6);
+	m.setVal(7, 7, 6);
+	m.setVal(0, 4, 7);
+	m.setVal(0, 0, 1000);
+	m.setVal(4, 4, 20000);
 	cout << "\n\n luego de add en la pos 7 7 valor 6" << endl;
 	cout << m;
 	//testAddElementVector();
@@ -59,11 +62,11 @@ void testAddElementVector()
 
 void testConstructorAsignacion()
 {
-	Matriu m;
+	MatriuSparse m;
 	cout << "matriz vacia" << endl;
 	cout << m;
 
-	Matriu m2(10, 10);
+	MatriuSparse m2(10, 10);
 	cout << "matriz inicializada" << endl;
 	cout << m2;
 	m = m2;

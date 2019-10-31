@@ -4,39 +4,41 @@
 
 using namespace std;
 
-class Matriu
+class MatriuSparse
 {
 public:
 	//Constructores
-	Matriu();
-	Matriu(string nomFitxer);
-	Matriu(int nFiles, int nCol);
-	Matriu(const Matriu& m);
-	~Matriu();
+	MatriuSparse();
+	MatriuSparse(string nomFitxer);
+	MatriuSparse(int nFiles, int nCol);
+	MatriuSparse(const MatriuSparse& m);
+	~MatriuSparse();
 
 	//Get - Set
 	int getNFiles() const { return m_nFiles; }
 	int getNColumnes() const { return m_nColumnes; }
-	bool getValor(int fila, int columna, int& valor);
-	void setValor(int fila, int columna, float valor);
-	bool checkFilaColumna(int fila, int columna);
-
+	bool getVal(int fila, int columna, int& valor);
+	bool setVal(int fila, int columna, float valor);
+	bool resize(int fila, int columna);
+	bool filaColMayor(int fila, int columna);
 	//Funciones
 	void liberarMemoria();
 	void inicializarMatriz(int nFiles, int nCol);
-	
 	void transpose();
-	void init(int nFiles, int nCol);
+	void init(int nFiles, int nColumnes);
+	bool existe(int nFila, int nCol);
+	
+	
 	
 	//Sobrecargas
-	Matriu& operator*(float num);
+	MatriuSparse& operator*(float num);
 	vector<float> operator*(vector<float> vect);
-	Matriu& operator=(const Matriu& m);
-	Matriu operator+(const Matriu& m);
-	Matriu operator+(float s);
-	Matriu operator/(float s);
-	bool operator==(const Matriu& m);
-	friend ostream& operator<<(ostream& out, Matriu& m);
+	MatriuSparse& operator=(const MatriuSparse& m);
+	MatriuSparse operator+(const MatriuSparse& m);
+	MatriuSparse operator+(float s);
+	MatriuSparse operator/(float s);
+	bool operator==(const MatriuSparse& m);
+	friend ostream& operator<<(ostream& out, MatriuSparse& m);
 
 private:
 	void ordenar();
@@ -47,9 +49,9 @@ private:
 	int m_nColumnes;
 	
 
-	vector<int> m_vecFilaX;
-	vector<int> m_vecColY;
+	vector<int> m_vecFila;
+	vector<int> m_vecCol;
 	vector<float> m_vecValue;
 
-	int const DEFAULT_VALUE = 1;
+	int const DEFAULT_VEC_VALUE = 0;
 };
