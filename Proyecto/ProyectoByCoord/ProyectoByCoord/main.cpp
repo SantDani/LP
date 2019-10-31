@@ -25,6 +25,8 @@ bool IgualFitxers(string nomF1, string nomF2, string nomFRes)
 				b = b.substr(0, pos);
 			if (a != b)
 			{
+				cout << "miFichero\t" << a << endl;
+				cout << "esperado" << b << endl << endl;
 				++cont;
 				fitxCompara << flush << "Error num " << cont << " a linia " << linia << endl << flush;
 				iguals = false;

@@ -176,7 +176,7 @@ bool MatriuSparse::setVal(int fila, int columna, float valor)
 	}
 
 
-	if (!false)
+	if (!trobat)
 	{
 		vector<int>::iterator itFila = m_vecFila.begin();
 		vector<int>::iterator itCol = m_vecCol.begin();
