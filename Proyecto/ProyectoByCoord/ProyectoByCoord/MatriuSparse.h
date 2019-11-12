@@ -19,12 +19,14 @@ public:
 	//~MatriuSparse() ;
 
 	//Get - Set
-	int getNFiles() const { return m_nFiles; }
-	int getNColumnes() const { return m_nColumnes; }
+	int getNFiles() const { return m_nFiles + 1; }
+	int getNColumnes() const { return m_nColumnes + 1; }
 	bool getVal(int fila, int columna,  float& valor) ;
 	bool getBinario(float& valor, int fila, int col);
 	bool getInteractivo(float& valor, int fila, int col);
 	bool setVal(int fila, int columna, float valor);
+	bool setValBinario(bool trobat, int& fila, int& columna, float& valor, bool& retflag);
+	bool setValIneractivo(bool trobat, int& fila, int& columna, float& valor, bool& retflag);
 	void addElementoMatriz(std::vector<int>::iterator& itFila, int& fila, std::vector<int>::iterator& itCol, int& columna, std::vector<float>::iterator& itValor, float& valor);
 	bool resize(int fila, int columna);
 	bool filaColMayor(int fila, int columna);
@@ -49,7 +51,6 @@ private:
 
 	int m_nFiles;
 	int m_nColumnes;
-
 
 	vector<int> m_vecFila;
 	vector<int> m_vecCol;

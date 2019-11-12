@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\Proyecto Guachin\ProjectLP\main.cpp(273,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\Proyecto Guachin\ProjectLP\main.cpp(477,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\Proyecto Guachin\ProjectLP\main.cpp(685,20): warning C4018: '<': no coinciden signed/unsigned
+  ProjectLP.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\Proyecto Guachin\ProjectLP\Debug\ProjectLP.exe

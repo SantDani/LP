@@ -5,7 +5,8 @@
 #include<vector>
 #include<iterator> // for iterators 
 
-#define style false
+#define mostrarInfo true
+#define setValBinarioON true
 using namespace std;
 //Constructores
 
@@ -27,53 +28,28 @@ MatriuSparse::MatriuSparse(string nomFitxer)
 
 	if (miFichero.is_open())
 	{
-		inicializarMatriz(0, 0);
-		int fila, col, filaAnterior , colAnterior;
-
-		miFichero >> filaAnterior >> colAnterior;
-		m_vecFila.emplace_back(filaAnterior);
-		m_vecCol.emplace_back(colAnterior);
-		m_vecValue.emplace_back(DEFAULT_VEC_VALUE_1);
-		
-		
+		//inicializarMatriz(0, 0);
+		int fila, col;
+		float valor;
 		while (!miFichero.eof()) // mientras no sea el final del fichero
 		{
-
 			miFichero >> fila >> col;
+			if (filaColMayor(fila, col))
+			{
+				resize(fila, col);
+			}
 		
-			resize(fila, col);
-			if (filaAnterior == fila && colAnterior != col)
-			{
-				m_vecFila.emplace_back(fila);
-				m_vecCol.emplace_back(col);
-				m_vecValue.emplace_back(DEFAULT_VEC_VALUE_1);
-			}
-			else
-			{
-				if (filaAnterior != fila && colAnterior != col)
-				{
-					m_vecFila.emplace_back(fila);
-					m_vecCol.emplace_back(col);
-					m_vecValue.emplace_back(DEFAULT_VEC_VALUE_1);
-				}
-						
-			}
+			setVal(fila, col, DEFAULT_VEC_VALUE_1);
 
-			//cout << fila << " : " << col<< "\t";
-			filaAnterior = fila;
-			colAnterior = col;
-			
 		}
 		miFichero.close();
 	}
 	else
-		throw "Error al leer el fichero: " +nomFitxer ;
-	//this->ordenar();
+		throw "Error al leer el fichero: " + nomFitxer ;
 }
 
 MatriuSparse::MatriuSparse(int nFiles, int nColumnes)
 {
-
 	inicializarMatriz(nFiles, nColumnes);
 }
 
@@ -96,28 +72,25 @@ MatriuSparse& MatriuSparse::operator*(float num)
 
 vector<float> MatriuSparse::operator*(vector<float> vect)
 {
-	if (vect.size() > m_nColumnes || vect.size() > m_nFiles)
+	if (vect.size() > getNColumnes() || vect.size() > getNFiles())
 	{
 		throw "ERROR: para multiplicar el vector ha de ser igual de largo que el numero de columnas de la matriz";
 	}
 	int numFila = 0;
-	int posFila = 0;
+	float cont = 0;
 	int sizeVect = vect.size();
-	vector<float> vecAux(vect.size()+1 , 0);//volveremos
+	vector<float> vecAux(getNColumnes(), 0);//volveremos
 
-	while (posFila < m_vecFila.size())
+	while (cont < m_vecFila.size())
 	{
-		if (m_vecFila[posFila] == numFila)
-		{
-			int posCol = m_vecCol[posFila]-1;
-			float valorMul = vect[posCol];
-			vecAux[posCol] += m_vecValue[posCol] * vect[posCol];
-		}
-		else 
-		{
-			numFila++;//vamos a la siguiente fila
-		}
-		posFila++;
+		
+		
+		float posVecFila = m_vecFila[cont];
+		float posVecCol = m_vecCol[cont];
+			
+ 		vecAux[posVecFila] += m_vecValue[cont] * vect[posVecCol];
+		
+		cont++;
 	}
 
 	return vecAux;
@@ -173,18 +146,9 @@ void MatriuSparse::init(int nFiles, int nCol)
 	inicializarMatriz(nFiles, nCol);
 }
 
-bool MatriuSparse::existe(int nFila, int nCol)
-{
-	bool existe = false;
-	//existira si encuentro la fila y la columna de la posicion
-	//volveremos
-	return existe;
-}
-
-
-
 bool MatriuSparse::setVal(int fila, int columna, float valor)
 {
+	
 	bool trobat = false;
 	if (filaColMayor(fila, columna))
 	{
@@ -192,21 +156,152 @@ bool MatriuSparse::setVal(int fila, int columna, float valor)
 		//por lo tanto no encontramos el valor
 		//add valor al final
 		resize(fila, columna);//modificamos dimensiones
-		//m_vecFila.push_back(fila);
-		//m_vecCol.push_back(columna);
-		//m_vecValue.push_back(valor);
-		//return false;
 	}
 
+	if (setValBinarioON)
+	{
+		bool retflag;
+		bool retval = setValBinario(trobat, fila, columna, valor, retflag);
+		if (retflag) return retval;
+	}
+	else
+	{
+		//bloque de set value ineratctivo
+		bool retflag;
+		bool retval = setValIneractivo(trobat, fila, columna, valor, retflag);
+		if (retflag) return retval;
+	}
+	
 
-	if (!trobat)
+	
+
+
+	return trobat;
+}
+
+bool MatriuSparse::setValBinario(bool trobat, int& fila, int& col, float& valor, bool& retflag)
+{
+	retflag = true;
+	if (m_vecFila.size() > 0)
 	{
 		vector<int>::iterator itFila = m_vecFila.begin();
 		vector<int>::iterator itCol = m_vecCol.begin();
 		vector<float>::iterator itValor = m_vecValue.begin();
+
+		int max, min, medio;
+		medio = 0;
 		
+		max = m_vecFila.size() - 1;
+		
+		min = 0;
+
+		bool trobat = false;
+		while (!trobat && min <= max)
+		{
+			medio = ((max + min) / 2);
+			
+			if (m_vecFila[medio] == fila)
+			{
+				if (m_vecCol[medio] == col)
+				{
+					m_vecValue[medio] = valor;
+					trobat = true;
+					if(mostrarInfo)
+						cout << m_vecFila[medio]<< " :: " << m_vecCol[medio] <<"encontrado, valor subtituido\t valor medio " << medio  << endl;
+					return true;
+				}
+				{
+					if (col < m_vecCol[medio])//es mayor la col del vector
+					{
+						max = medio - 1;
+						if(mostrarInfo)
+							cout << m_vecFila[medio] << " :: " << m_vecCol[medio] << "columna menor\t Nuevo MAX " << max << endl;
+					}
+					else//es menor la col del vector
+					{
+						min = medio + 1;
+						if(mostrarInfo)
+							cout << m_vecFila[medio] << " :: " << m_vecCol[medio] << "columna mayor\t Nuevo MIN " << min << endl;
+					}
+				}
+			}
+			{
+				if (fila < m_vecFila[medio])
+				{
+					max = medio - 1;
+					if (mostrarInfo)
+						cout << m_vecFila[medio] << " :: " << m_vecCol[medio] << "fila menor\t Nuevo MAX " << max << endl;
+				}
+				else//fila es menor
+				{
+					min = medio + 1;
+					if (mostrarInfo)
+						cout << m_vecFila[medio] << " :: " << m_vecCol[medio] << "fila mayor\t Nuevo MIN " << min << endl;
+				}
+					
+			}
+
+		}
+
+		if (!trobat)
+		{
+			if(mostrarInfo)
+				cout << "nuevo elemenmto : "<<  m_vecFila[medio] << " :: " << m_vecCol[medio] <<  endl;
+			if (fila < m_vecFila[medio])
+			{
+				if (col > m_vecCol[medio])
+				{
+					medio++;
+				}
+			}
+			else
+			{
+			
+				medio++;
+			}
+			
+			//insert de la nueva posicion
+			//incrementamos el iterador hasta la posicion deseada
+			itFila += medio;
+			itCol += medio;
+			itValor += medio;
+			
+			addElementoMatriz(itFila, fila, itCol, col, itValor, valor);
+		}
+		else// no hay nada en el vector lo add
+		{
+			if (mostrarInfo)
+				cout << "Primer elemento : " << m_vecFila[medio] << " :: " << m_vecCol[medio] << endl;
+			m_vecFila.push_back(fila);
+			m_vecCol.push_back(col);
+			m_vecValue.push_back(valor);
+			return false;
+		}
+	}
+	else// no hay nada en el vector lo add
+	{
+		m_vecFila.push_back(fila);
+		m_vecCol.push_back(col);
+		m_vecValue.push_back(valor);
+		return false;
+	}
+	
+	return {};
+}
+
+bool MatriuSparse::setValIneractivo(bool trobat, int& fila, int& columna, float& valor, bool& retflag)
+{
+	retflag = true;
+	if (!trobat)
+	{
+		
+		vector<int>::iterator itFila = m_vecFila.begin();
+		vector<int>::iterator itCol = m_vecCol.begin();
+		vector<float>::iterator itValor = m_vecValue.begin();
+
 		while (itFila != m_vecFila.end() && !trobat)
 		{
+			
 			if ((*itFila) <= fila)
 			{
 				/*Podemos hacer la condicion siguiente porque el vector
@@ -218,12 +313,12 @@ bool MatriuSparse::setVal(int fila, int columna, float valor)
 					{
 						//add valor que no exisita
 						//if(*itValor != 0) //hemos add el valor por lo tanto no lo hemos encontrado
-							addElementoMatriz(itFila, fila, itCol, columna, itValor, valor);
+						addElementoMatriz(itFila, fila, itCol, columna, itValor, valor);
 						return false;
 					}
 
 					//si es igual modificamos
-					
+
 					if (*itCol == columna)
 					{
 						//modificamos el valor porque existe
@@ -237,8 +332,8 @@ bool MatriuSparse::setVal(int fila, int columna, float valor)
 				if (!trobat)
 				{
 					/*En el caso que vayamos a la siguiente fila (mayor)
-						no hemos encontrado una columna menor, por lo tanto
-						la que se ha enviado ser sera la mayor y hay que add*/
+					no hemos encontrado una columna menor, por lo tanto
+					la que se ha enviado ser sera la mayor y hay que add*/
 					addElementoMatriz(itFila, fila, itCol, columna, itValor, valor);
 
 					return false;
@@ -261,11 +356,15 @@ bool MatriuSparse::setVal(int fila, int columna, float valor)
 		m_vecValue.push_back(valor);
 		return false;
 	}
-
-	return trobat;
+	retflag = false;
+	return {};
 }
 
-void MatriuSparse::addElementoMatriz(std::vector<int>::iterator& itFila, int& fila, std::vector<int>::iterator& itCol, int& columna, std::vector<float>::iterator& itValor, float& valor)
+void MatriuSparse::addElementoMatriz(
+	std::vector<int>::iterator& itFila, 
+	int& fila, std::vector<int>::iterator& itCol, 
+	int& columna, std::vector<float>::iterator& itValor, 
+	float& valor)
 {
 	m_vecFila.insert(itFila, fila);
 	m_vecCol.insert(itCol, columna);
@@ -357,9 +456,9 @@ void MatriuSparse::swap(vector<int>& vec, int posActual)
 
 bool MatriuSparse::getVal(int  fila, int  col,  float& valor) 
 {
-	return getInteractivo(valor, fila, col);
+	//return getInteractivo(valor, fila, col);
 
-	//return getBinario(valor, fila, col);
+	return getBinario(valor, fila , col);
 }
 
 bool MatriuSparse::getBinario(float& valor, int fila, int col)
@@ -373,36 +472,46 @@ bool MatriuSparse::getBinario(float& valor, int fila, int col)
 	else
 	{
 		int max, min, medio;
-		max = m_vecFila.size();
+		max = m_vecFila.size()-1;
 		min = 0;
 
 		bool trobat = false;
-
-		int contFila = 0;
-		while (contFila < m_vecFila.size() && !trobat)
+		while (!trobat && min <= max)
 		{
 			medio = ((max + min) / 2);
-			if (style)
-				cout << m_vecFila[contFila] << "\t" << m_vecCol[contFila] << endl;
-
+			
 			if (m_vecFila[medio] == fila && m_vecCol[medio] == col)
 			{
-				valor = m_vecValue[contFila];
+				valor = m_vecValue[medio];
 				trobat = true;
 			}
 			else
 			{
-				if (m_vecFila[medio] < fila  && m_vecCol[medio] < col)
+				if (m_vecFila[medio] >= fila  && m_vecCol[medio] > col)
 				{
-					max = medio - 1;
+					/*cuando la fila es mayor o igual he de decidir si es mayor o menor a apartir de la columna*/
+					if (m_vecFila[medio] == fila)
+					{
+						if (m_vecCol[medio] > col)
+						{
+							max = medio - 1;
+						}
+						else
+						{
+							min = medio + 1;
+						}
+					}
+					else //if(m_vecFila[medio] > fila)
+					{
+
+						max = medio - 1;
+					}
 				}
 				else
 				{
 					min = medio + 1;
 				}
 			}
-			contFila++;
-
 		}
 
 		return true;//no encontrado valor pero esta dentro de la matriz por lo tanto existe con valor 0
@@ -424,8 +533,8 @@ bool MatriuSparse::getInteractivo(float& valor, int fila, int col)
 		int contFila = 0;
 		while (contFila < m_vecFila.size() && !trobat)
 		{
-			if (style)
-				cout << m_vecFila[contFila] << "\t" << m_vecCol[contFila] << endl;
+			if (mostrarInfo)
+				//cout << m_vecFila[contFila] << "\t" << m_vecCol[contFila] << endl;
 			if (m_vecFila[contFila] == fila && m_vecCol[contFila] == col)
 			{
 				valor = m_vecValue[contFila];
@@ -459,7 +568,7 @@ void MatriuSparse::inicializarMatriz(int nFiles, int nCol)
 ostream& operator<<(ostream& out, MatriuSparse& m)
 {
 	// volveremos, a valorar si incrementamos filas y columnas aqui o por defecto
-	out << "MATRIU DE (FILES: " << m.m_nFiles + 1  << "  COLUMNES: " << m.m_nColumnes + 1  << " )" << endl;
+	out << "MATRIU DE (FILES: " << m.getNFiles()  << "  COLUMNES: " << m.getNColumnes()  << " )" << endl;
 	out << "VALORS (FILA::COL::VALOR)" << endl;
 	for (int i = 0; i < m.m_vecFila.size(); i++)
 	{

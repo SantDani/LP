@@ -1,0 +1,2 @@
+int mainProyecto(bool& retflag);
+
