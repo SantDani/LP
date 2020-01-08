@@ -1,0 +1,18 @@
+﻿  main.cpp
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(255,7): error C2672:  'TryParse': no se encontró una función sobrecargada que coincida
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(242): message :  al compilar la función del miembro clase plantilla "float Tree<std::string>::avalua(void)"
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\main.cpp(51): message :  vea la referencia a la creación de instancias de plantilla de función "float Tree<std::string>::avalua(void)" que se está compilando
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\main.cpp(44): message :  vea la referencia a la creación de instancias de clase plantilla "Tree<std::string>" que se está compilando
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(255,1): error C2783:  'bool TryParse(std::string,T &)': no se pudo deducir el argumento de plantilla para 'T'
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(229): message :  vea la declaración de 'TryParse'
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(258,1): error C2563:  hay una falta de correspondencia en la lista de parámetros formales
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(258,1): error C2568:  '=': no se puede resolver la sobrecarga de funciones
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(258,1): message :  puede ser 'const _Elem *std::data(std::initializer_list<_Elem>) noexcept'
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(258,1): message :  o       '_Ty *std::data(_Ty (&)[_Size]) noexcept'
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(258,1): message :  o       'unknown-type std::data(const _Container &)'
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(258,1): message :  o       'unknown-type std::data(_Container &)'
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(265,1): error C2110:  '+': no se pueden sumar dos punteros
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(269,1): error C2296:  '/': no es válido; el operando izquierdo es de tipo 'Tree<std::string> *'
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(269,1): error C2297:  '/': no es válido; el operando derecho es de tipo 'Tree<std::string> *'
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(273,1): error C2296:  '*': no es válido; el operando izquierdo es de tipo 'Tree<std::string> *'
+C:\SRP\UAB\LP\LP\T6_Arboles\S17_IntroduccioAbres\S17_IntroduccioAbres\Tree.hpp(273,1): error C2297:  '*': no es válido; el operando derecho es de tipo 'Tree<std::string> *'

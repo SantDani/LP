@@ -1,0 +1,34 @@
+﻿  Graf.cpp
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\Graf.cpp(45,20): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\Graf.cpp(61,20): warning C4018:  '<': no coinciden signed/unsigned
+  GrafList.cpp
+  main.cpp
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\Graf.cpp(129,26): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(50,102): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(51,3): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(51,28): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(51,65): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(51,101): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(53,3): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(53,13): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(54,3): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(54,39): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(55,3): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(55,15): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(55,52): warning C4566:  el carácter representado por el nombre de carácter universal '\uFFFD' no se puede representar en la página de códigos actual (1252)
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(70,45): error C2440:  'inicializando': no se puede realizar la conversión de 'initializer list' a 'GrafList'
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(70,45): message :  Ningún constructor ha podido aceptar el tipo de origen o bien la resolución de sobrecarga del constructor era ambigua
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(124,20): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(134,19): error C2086:  'std::vector<int,std::allocator<_Ty>> vDist': nueva definición
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(134,19): error C2086:         with
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(134,19): error C2086:         [
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(134,19): error C2086:             _Ty=int
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(134,19): error C2086:         ]
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(122): message :  vea la declaración de 'vDist'
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(137,46): error C2660:  'Graf::dijkstra': la función no acepta 3 argumentos
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\graf.h(25,7): message :  vea la declaración de 'Graf::dijkstra'
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(138,20): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(144,20): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\main.cpp(154,29): error C2039:  'camiMesCurt': no es un miembro de 'Graf'
+  Generando código...
+C:\SRP\UAB\LP\LP\T5_Grafos\S16_Dijkstra\S16_Dijkstra\graf.h(9): message :  vea la declaración de 'Graf'

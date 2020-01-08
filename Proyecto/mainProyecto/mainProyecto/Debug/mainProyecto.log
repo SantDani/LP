@@ -1,83 +1,83 @@
 ﻿  Matriu.cpp
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(33,18): warning C4101: 'valor': variable local sin referencia
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(76,17): warning C4018: '<': no coinciden signed/unsigned
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(90,17): warning C4018: '<': no coinciden signed/unsigned
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(106,17): warning C4018: '<': no coinciden signed/unsigned
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(162,11): warning C4244: '=': conversión de 'const int' a 'float'; posible pérdida de datos
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244: 'argumento': conversión de 'const int' a 'const _Ty'; posible pérdida de datos
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244:         with
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244:         [
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244:             _Ty=float
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244:         ]
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244: 'argumento': conversión de 'const int' a 'const _Ty'; posible pérdida de datos
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244:         with
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244:         [
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244:             _Ty=float
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244:         ]
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(341,19): warning C4018: '<': no coinciden signed/unsigned
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(343,21): warning C4018: '<': no coinciden signed/unsigned
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(347,11): warning C4101: 'aux': variable local sin referencia
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244: 'inicializando': conversión de '_Ty' a 'float'; posible pérdida de datos
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244:         with
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244:         [
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244:             _Ty=int
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244:         ]
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244: '=': conversión de 'float' a '_Ty'; posible pérdida de datos
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244:         with
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244:         [
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244:             _Ty=int
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244:         ]
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(394,19): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(396,20): warning C4018: '<': no coinciden signed/unsigned
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244: '=': conversión de '_Ty' a 'int'; posible pérdida de datos
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244:         with
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244:         [
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244:             _Ty=float
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244:         ]
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244: 'argumento': conversión de 'const int' a 'const _Ty'; posible pérdida de datos
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244:         with
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244:         [
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244:             _Ty=float
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244:         ]
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(457,20): warning C4018: '<': no coinciden signed/unsigned
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244: 'inicializando': conversión de 'const int' a '_Objty'; posible pérdida de datos
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244:         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244:         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244:             _Objty=float
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\xmemory(758,82): warning C4244:         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message : vea la referencia a la creación de instancias de plantilla de función "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const int&>(_Alloc &,_Objty *const ,const int &)" que se está compilando
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :             _Alloc=std::allocator<float>,
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :             _Ty=float,
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :             _Objty=float
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(633): message :         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message : vea la referencia a la creación de instancias de plantilla de función "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const int&>(_Alloc &,_Objty *const ,const int &)" que se está compilando
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Alloc=std::allocator<float>,
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Ty=float,
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :             _Objty=float
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(638): message :         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message : vea la referencia a la creación de instancias de plantilla de función "void std::vector<float,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<const int&>(const int &)" que se está compilando
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message :         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message :         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message :             _Ty=float
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.23.28105\include\vector(651): message :         ]
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(33,18): warning C4101:  'valor': variable local sin referencia
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(76,17): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(90,17): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(106,17): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(162,11): warning C4244:  '=': conversión de 'const int' a 'float'; posible pérdida de datos
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244:  'argumento': conversión de 'const int' a 'const _Ty'; posible pérdida de datos
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244:         with
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244:         [
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244:             _Ty=float
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(165,24): warning C4244:         ]
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244:  'argumento': conversión de 'const int' a 'const _Ty'; posible pérdida de datos
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244:         with
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244:         [
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244:             _Ty=float
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(238,24): warning C4244:         ]
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(341,19): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(343,21): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(347,11): warning C4101:  'aux': variable local sin referencia
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244:  'inicializando': conversión de '_Ty' a 'float'; posible pérdida de datos
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244:         with
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244:         [
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244:             _Ty=int
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(383,12): warning C4244:         ]
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244:  '=': conversión de 'float' a '_Ty'; posible pérdida de datos
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244:         with
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244:         [
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244:             _Ty=int
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(385,19): warning C4244:         ]
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(394,19): warning C4244:  '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(396,20): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244:  '=': conversión de '_Ty' a 'int'; posible pérdida de datos
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244:         with
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244:         [
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244:             _Ty=float
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(402,25): warning C4244:         ]
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244:  'argumento': conversión de 'const int' a 'const _Ty'; posible pérdida de datos
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244:         with
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244:         [
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244:             _Ty=float
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(430,28): warning C4244:         ]
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(457,20): warning C4018:  '<': no coinciden signed/unsigned
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\xmemory(761,82): warning C4244:  'inicializando': conversión de 'const int' a '_Objty'; posible pérdida de datos
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\xmemory(761,82): warning C4244:         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\xmemory(761,82): warning C4244:         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\xmemory(761,82): warning C4244:             _Objty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\xmemory(761,82): warning C4244:         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(635): message :  vea la referencia a la creación de instancias de plantilla de función "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const int&>(_Alloc &,_Objty *const ,const int &)" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(635): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(635): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(635): message :             _Alloc=std::allocator<float>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(635): message :             _Ty=float,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(635): message :             _Objty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(635): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(640): message :  vea la referencia a la creación de instancias de plantilla de función "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const int&>(_Alloc &,_Objty *const ,const int &)" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(640): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(640): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(640): message :             _Alloc=std::allocator<float>,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(640): message :             _Ty=float,
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(640): message :             _Objty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(640): message :         ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(653): message :  vea la referencia a la creación de instancias de plantilla de función "void std::vector<float,std::allocator<_Ty>>::_Emplace_back_with_unused_capacity<const int&>(const int &)" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(653): message :         with
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(653): message :         [
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(653): message :             _Ty=float
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.22.27905\include\vector(653): message :         ]
   main.cpp
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message : vea la referencia a la creación de instancias de plantilla de función "void std::vector<float,std::allocator<_Ty>>::emplace_back<const int&>(const int &)" que se está compilando
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message :         with
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message :         [
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message :             _Ty=float
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message :         ]
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(88,20): warning C4018: '<': no coinciden signed/unsigned
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244: '=': conversión de 'int' a '_Ty'; posible pérdida de datos
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244:         with
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244:         [
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244:             _Ty=float
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244:         ]
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(99,20): warning C4018: '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message :  vea la referencia a la creación de instancias de plantilla de función "void std::vector<float,std::allocator<_Ty>>::emplace_back<const int&>(const int &)" que se está compilando
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message :         with
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message :         [
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message :             _Ty=float
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(45): message :         ]
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(88,20): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244:  '=': conversión de 'int' a '_Ty'; posible pérdida de datos
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244:         with
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244:         [
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244:             _Ty=float
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(90,15): warning C4244:         ]
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(99,20): warning C4018:  '<': no coinciden signed/unsigned
   Generando código...
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(109,20): warning C4018: '<': no coinciden signed/unsigned
-C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(82): warning C4172: devolución de dirección de la variable local o temporal: mAux
-  mainProyecto.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\mainProyecto\Debug\mainProyecto.exe
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\main.cpp(109,20): warning C4018:  '<': no coinciden signed/unsigned
+C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\mainProyecto\Matriu.cpp(82): warning C4172:  devolución de dirección de la variable local o temporal: mAux
+  mainProyecto.vcxproj -> C:\SRP\UAB\LP\LP\Proyecto\mainProyecto\Debug\mainProyecto.exe
