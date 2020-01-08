@@ -1,0 +1,50 @@
+﻿  main.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\main.cpp(268,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\main.cpp(471,21): warning C4018: '<': no coinciden signed/unsigned
+  MatriuSparse.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\main.cpp(676,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(42,22): warning C4244: 'argumento': conversión de 'const int' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(33,9): warning C4101: 'valor': variable local sin referencia
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(62,17): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(75,18): warning C4018: '>': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(75,50): warning C4018: '>': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(88,32): warning C4244: 'argumento': conversión de 'float' a 'const unsigned int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(88,20): warning C4244: 'inicializando': conversión de '_Ty' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(88,20): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(88,20): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(88,20): warning C4244:             _Ty=int
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(88,20): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(89,30): warning C4244: 'argumento': conversión de 'float' a 'const unsigned int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(89,19): warning C4244: 'inicializando': conversión de '_Ty' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(89,19): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(89,19): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(89,19): warning C4244:             _Ty=int
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(89,19): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(91,11): warning C4244: 'argumento': conversión de 'float' a 'const unsigned int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(91,37): warning C4244: 'argumento': conversión de 'float' a 'const unsigned int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(91,50): warning C4244: 'argumento': conversión de 'float' a 'const unsigned int'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(108,17): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(412,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(414,21): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(418,11): warning C4101: 'aux': variable local sin referencia
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(452,12): warning C4244: 'inicializando': conversión de '_Ty' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(452,12): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(452,12): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(452,12): warning C4244:             _Ty=int
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(452,12): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(454,19): warning C4244: '=': conversión de 'float' a '_Ty'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(454,19): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(454,19): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(454,19): warning C4244:             _Ty=int
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(454,19): warning C4244:         ]
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(466,10): warning C4244: '=': conversión de 'const int' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(523,10): warning C4244: '=': conversión de 'const int' a 'float'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(534,19): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(565,28): warning C4244: 'argumento': conversión de 'const int' a 'const _Ty'; posible pérdida de datos
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(565,28): warning C4244:         with
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(565,28): warning C4244:         [
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(565,28): warning C4244:             _Ty=float
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(565,28): warning C4244:         ]
+  Generando código...
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\ProyectoByCoord\MatriuSparse.cpp(573,20): warning C4018: '<': no coinciden signed/unsigned
+  ProyectoByCoord.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\1r parte\ProyectoByCoord\Debug\ProyectoByCoord.exe

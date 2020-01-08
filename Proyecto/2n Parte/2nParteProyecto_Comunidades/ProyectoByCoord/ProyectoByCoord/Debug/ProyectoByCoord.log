@@ -1,0 +1,8 @@
+﻿  Comunitat.cpp
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\2n Parte\2nParteProyecto_Comunidades\ProyectoByCoord\ProyectoByCoord\Comunitat.cpp(35,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\2n Parte\2nParteProyecto_Comunidades\ProyectoByCoord\ProyectoByCoord\Comunitat.cpp(44,26): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\2n Parte\2nParteProyecto_Comunidades\ProyectoByCoord\ProyectoByCoord\Comunitat.cpp(95,26): warning C4018: '<': no coinciden signed/unsigned
+  Graph.cpp
+  main.cpp
+  Generando código...
+  ProyectoByCoord.vcxproj -> C:\Users\SantiagoSRP\GIT\UAB\LP\Proyecto\2n Parte\2nParteProyecto_Comunidades\ProyectoByCoord\Debug\ProyectoByCoord.exe

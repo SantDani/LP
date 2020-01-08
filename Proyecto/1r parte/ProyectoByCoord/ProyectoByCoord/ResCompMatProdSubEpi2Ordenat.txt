@@ -1,0 +1,2 @@
+Error num 1 a linia 4
+Error num 2 a linia 5

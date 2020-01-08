@@ -1,0 +1,4 @@
+Error num 1 a linia 4
+Error num 2 a linia 5
+Error num 3 a linia 20
+Error num 4 a linia 21
